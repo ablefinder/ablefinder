@@ -1,0 +1,455 @@
+<!doctype html>
+<!--[if IE 7 ]>
+<html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>
+<html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>
+<html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+
+	<title>AbleFinder - Connect with parents on similar journeys.</title>
+	<meta name="description" content="The AbleFinder App is revolutionizing the way in which parents of children with disability connect, inform, and empower each other.">
+	<meta property="og:title" content="Connect with parents on similar journeys." />
+	<meta property="og:description" content="Match your interests, child's age and disability journey." />
+	<!-- <meta property="og:image" content="images/og110718.jpg" /> -->
+
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.ablefinder.com" />
+	<meta property="fb:app_id" content="393216137704080" />
+
+	<link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="images/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+
+	<script>
+		window.fbAsyncInit = function () { FB.init({ appId: '1877373532575432', autoLogAppEvents: true, xfbml: true, version: 'v2.11' }); }; (function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) { return; }
+			js = d.createElement(s); js.id = id; js.src = "https://connect.facebook.net/en_US/sdk.js"; fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	
+	<link href="css/all.css" rel="stylesheet">
+	<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/assets/owl.carousel.min.css" rel="stylesheet"> -->
+
+
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<!-- End or head -->
+
+<body class="loader">
+   <!-- Header part -->
+   <style type="text/css">
+      @keyframes blinker {
+         50% {
+            opacity: 0;
+         }
+      }
+   
+      body.loader {
+         overflow: hidden;
+      }
+   
+      #page-preloader {
+         position: fixed;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         background-color: white;
+         z-index: 1000;
+      }
+   
+      #page-preloader-spinner {
+         display: block;
+         position: absolute;
+         margin: auto;
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         width: 100px;
+         height: 100px;
+         background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwcHgiIGhlaWdodD0iMTAwcHgiIHZpZXdCb3g9IjAgMCAxMDAgMTAwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGlkPSIjMSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTTY3LjQ2OTkzNTgsMzIuODgwODI4NSBDNjYuNjc3NDg3NiwzMy41Nzc1MTU5IDY1LjYzODA4MiwzNCA2NC41LDM0IEM2Mi4wMTQ3MTg2LDM0IDYwLDMxLjk4NTI4MTQgNjAsMjkuNSBDNjAsMjcuMDE0NzE4NiA2Mi4wMTQ3MTg2LDI1IDY0LjUsMjUgQzY0LjU5MTgxNiwyNSA2NC42ODI5ODk4LDI1LjAwMjc0OTggNjQuNzczNDQzNSwyNS4wMDgxNzE1IEM2NC45MTY4MDk0LDI0Ljk5NzQ5NTUgNjUuMDYyNzA0NSwyNC45OTcwMDU5IDY1LjIxMDM0NTIsMjUuMDA3MzgzMyBDNzEuMDk0MjUyMSwyNS40MjA5NTE2IDc1LjQxMTQ3MDQsMzIuMDI2MjM3IDc0Ljk0NzE3NzQsMzkuMjE1MzA0MyBDNzQuNDY4NDIwNSw0Ni42MjgzMzA3IDY5LjM3MDkzNjksNTMuMjg0MTc1NyA2MCw1Ny41ODc0MDIgTDYwLDg4IEM2MCw5Mi44MjYzNTYgNTUuODM1MzQ5Nyw5NyA1MSw5NyBMMTYsOTcgQzExLjE2NDY1MDMsOTcgNyw5Mi44MjYzNTYgNyw4OCBDNyw4NS4xNjU0NjI2IDguMDA2MDk5MTksODIuNjk3MTE3NCA5LjkzMzc1MTYxLDgwLjgyNTAwMTcgTDI5LjkzMzc1MTYsNjEuODI1MDAxNyBMMzQuMDY2MjQ4NCw2Ni4xNzQ5OTgzIEwxNC4wOTAyNCw4NS4xNTE5NTE5IEMxMy4zNzA0MzEyLDg1Ljg1MTExODUgMTMsODYuNzU5OTI3NyAxMyw4OCBDMTMsODkuNTE1NTQxNCAxNC40ODEyNTk3LDkxIDE2LDkxIEw1MSw5MSBDNTIuNTE4NzQwMyw5MSA1NCw4OS41MTU1NDE0IDU0LDg4IEw1NCw1OC4yMzY4ODA5IEM1My44ODAxNjQ5LDU4LjEyOTkxOTUgNTMuNzY4MzQ2Myw1OC4wMTI3NzI0IDUzLjY2NjAyMDQsNTcuODg2MTEzOCBDNDMuODcwNTc2OCw1My41OTU3OTMzIDM4LjU0MjgwMTksNDYuODAyMDk2MyAzOC4wNTI4MjI2LDM5LjIxNTMwNDMgQzM3LjU4ODUyOTYsMzIuMDI2MjM3IDQxLjkwNTc0NzksMjUuNDIwOTUxNiA0Ny43ODk2NTQ4LDI1LjAwNzM4MzMgQzQ3LjkzNzI5NTUsMjQuOTk3MDA1OSA0OC4wODMxOTA2LDI0Ljk5NzQ5NTUgNDguMjI2NTU2NSwyNS4wMDgxNzE1IEM0OC4zMTcwMTAyLDI1LjAwMjc0OTggNDguNDA4MTg0LDI1IDQ4LjUsMjUgQzUwLjk4NTI4MTQsMjUgNTMsMjcuMDE0NzE4NiA1MywyOS41IEM1MywzMS45ODUyODE0IDUwLjk4NTI4MTQsMzQgNDguNSwzNCBDNDcuMzYxOTE4LDM0IDQ2LjMyMjUxMjQsMzMuNTc3NTE1OSA0NS41MzAwNjQyLDMyLjg4MDgyODUgQzQ0LjU0MjA4NjIsMzQuMzI0MTYzNyA0My44ODc0OTY3LDM2LjQ2MTg2NzIgNDQuMDQwMzQ4NiwzOC44Mjg2MTA3IEM0NC4zODMzMzE3LDQ0LjEzOTMyNyA0OC4zODE1MTc4LDQ5LjE1NDY2NjggNTYuNSw1Mi41NzUxMDgzIEM2NC42MTg0ODIyLDQ5LjE1NDY2NjggNjguNjE2NjY4Myw0NC4xMzkzMjcgNjguOTU5NjUxNCwzOC44Mjg2MTA3IEM2OS4xMTI1MDMzLDM2LjQ2MTg2NzIgNjguNDU3OTEzOCwzNC4zMjQxNjM3IDY3LjQ2OTkzNTgsMzIuODgwODI4NSBaIE01Nyw3OCBDMzUuOTU4ODA5Myw3OCAxOSw2MS4zNzczNjcgMTksNDEgQzE5LDE5Ljc4OTMyMTkgMzUuNzg5MzIxOSwzIDU3LDMgQzc3LjM3NzM2NywzIDk0LDE5Ljk1ODgwOTMgOTQsNDEgQzk0LDYxLjIxMDY3ODEgNzcuMjEwNjc4MSw3OCA1Nyw3OCBaIE01Nyw3MiBDNzMuODk2OTY5Niw3MiA4OCw1Ny44OTY5Njk2IDg4LDQxIEM4OCwyMy4yNDU5MjY2IDc0LjAzNjQ3MTksOSA1Nyw5IEMzOS4xMDMwMzA0LDkgMjUsMjMuMTAzMDMwNCAyNSw0MSBDMjUsNTguMDM2NDcxOSAzOS4yNDU5MjY2LDcyIDU3LDcyIFoiIGlkPSJMaW5lLTIiIGZpbGw9IiMwMDdGRkYiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPjwvZz48L3N2Zz4=');
+         animation: blinker 3s linear infinite;
+      }
+   </style>
+   <div id="page-preloader">
+      <div id="page-preloader-spinner"></div>
+   </div>
+   <section class="header">
+      <div class="headerTopHolder">
+      	<div class="headerTop">
+      		<a class="logo" href="/">AbleFinder</a>
+      		<ul class="mainNav">
+      			<!-- <li>
+      				<a href="/" title="Home">Home</a>
+      			</li> -->
+      			<li>
+      				<a href="about.html" title="About">About</a>
+      			</li>
+      			<li>
+      				<a href="event.html" title="Events">Events</a>
+      			</li>
+      			<li>
+      				<a href="work-with-us.html" title="Work with us">Work with us</a>
+      			</li>
+      			<li>
+      				<a href="https://www.paypal.me/AbleFinderPtyLtd" title="Donate" target="_blank">Donate</a>
+      			</li>
+      			<!-- <li class="navButton">
+      				<a href="https://forms.gle/9Xa8ompwtk4BydUN6" title="Get Early Access" target="_blank">Get Early Access</a>
+      			</li> -->
+      			<li class="app_link_wrap">
+      				<a href="https://apps.apple.com/us/app/ablefinder/id1469181215" class="app_link apple" target="_blank">
+      					<img src="images/apple_appstore.svg" alt="Apple App Store">
+      				</a>
+      				<a href="https://play.google.com/store/apps/details?id=com.ablefinder.app" class="app_link gplay" target="_blank">
+      					<img src="images/google_play.svg" alt="Google Play">
+      				</a>
+      			</li>
+      		</ul>
+      		<div id="nav-icon">
+      			<span></span>
+      			<span></span>
+      			<span></span>
+      		</div>
+      	</div>
+      </div>
+   </section>
+   <nav id="sidebarNav">
+     <ul>
+       <li><a href="/" title="Home">Home</a></li>
+       <li>
+         <a href="about.html" title="About">About</a>
+       </li>
+       <li>
+         <a href="ourteam.html" title="Our Team">Our Team</a>
+       </li>
+       <li>
+         <a href="event.html" title="Events">Events</a>
+       </li>
+       <li>
+         <a href="community.html" title="Founding Community">Founding Community</a>
+       </li>
+       <li>
+         <a href="work-with-us.html" title="Work with us">Work with us</a>
+       </li>
+       <li>
+         <a href="http://instagram.com/ablefinder" title="#IAMBLE" target="_blank">#IAMBLE</a>
+       </li>
+       <li>
+         <a href="https://www.paypal.me/AbleFinderPtyLtd" target="_blank" title="Donate">Donate</a>
+       </li>
+       
+       <li>
+         <a class="arrow-link" target="_blank" href="https://forms.gle/EaXJqPiAJmJB4HsY8">Your feedback</a>
+       </li>
+       <li>
+         <a class="arrow-link" target="_blank" href="https://forms.gle/249vLJycexvP6d8R6">Your story</a>
+       </li>
+       <li>
+         <a class="arrow-link" target="_blank" href="https://forms.gle/3BHSFpdeGfby7wBJ8">Get in touch</a>
+       </li>
+       <li>
+         <a href="faq.html" title="FAQ">FAQ</a>
+       </li>
+       
+     </ul>
+     <!-- <a class="sidebarBtn" href="https://forms.gle/9Xa8ompwtk4BydUN6" target="_blank" title="Get Early Access">Get Early Access</a> -->
+     <div class="app_link_wrap_content">
+       <a href="https://apps.apple.com/us/app/ablefinder/id1469181215" class="app_link apple" target="_blank">
+         <img src="images/apple_appstore.svg" alt="Apple App Store">
+       </a>
+       <a href="https://play.google.com/store/apps/details?id=com.ablefinder.app" class="app_link gplay" target="_blank">
+         <img src="images/google_play.svg" alt="Google Play">
+       </a>
+     </div>
+   </nav>
+   
+   <div id="PageOverlay"></div>
+   <!-- Header part /end -->
+
+   <section class="wrapper faq_page">
+      <section>
+         <div class="mission-promo">
+            <h1>PRIVACY POLICY – AbleFinder Pty. Ltd.</h1>
+         </div>
+      </section>
+      <div class="row_holder no_border">
+         <div class="inner_wrap">
+         <ol>
+         <li>
+            <p><b>Privacy Policy:</b></p>
+            <p>This Privacy Policy applies to the collection, storage, and use by AbleFinder Pty. Ltd. (ABN 64 625 713 724 ) (<b>AbleFinder, we, us, our​</b>) of your personal information. AbleFinder is committed to the protection of personal information and has developed this PrivacyPolicy in line with the ‘Australian Privacy Principles’ in the Privacy Act 1988 (Cth).</p>
+            <p>You agree that using our Products (Website www.ablefinder.com.au, Facebook Messenger Chatbot, or AbleFinder App) and/or clicking ‘Get Started’ when signing up for an Account on our Products, implies your consent to the collection and use of your personal information in accordance with this Privacy Policy. We may change this Privacy Policy from time to time. Your use of our Products following any such change to the Privacy Policy will confirm your acceptance of the changes</p>
+         </li>
+         <li>
+            <p><b>Collection of Your Personal Information:</b></p>
+            <p>Your personal information is collected to enhance your use of our Products and to enable us to provide the services on the our Products. In operating these Products we may collect:</p>
+            <b>Things that you and others do and provide.</b>
+            <ul>
+               <li>
+               <p><b>Information and content you provide.</b> ​We collect the content, communications and other information you provide when you use our Products, including when you sign up for an account, create or share content, and message or communicate with others. This can include information in or about the content that you provide (e.g., metadata), such as the location of a photo or the date a file was created. Our systems automatically process content and communications that you and others provide to analyse context and what’s in them for the purposes described below</p>
+               </li>
+               <li><b>Networks and connections.</b> ​We collect information about the people that you are connected to and how you interact with them across our Products, such as people you communicate with the most or groups that you are part of. We also collect contact information if you <u>choose to upload, sync or import it from a device</u> (such as address book), which we use for things such as helping you and others find people you may know and for the other purposes listed below</li>
+               <li><b>Your usage.</b> ​We collect information about how you use our Products, such as the types of content you view or engage with, the features you use, the actions you take, the people or accounts you interact with and the time, frequency and duration of your activities. For example, we log when you’re using and have last used our Products, and what posts, videos and other content you view on our Products.</li>
+               <li><b>Information about transactions made on our Products.</b> ​If you use our Products for financial transactions (such as when you make a donation), we collect information about the transaction. This includes payment information, such as your credit or debit card number and other card information, other account and authentication information, billing, and contact details.</li>
+               <li><b>Things others do and information that they provide about you.</b> ​We also receive and analyse content, communications, and information that other people provide when they use our Products. This can include information about you, such as when others send a message to you or upload, sync or import your contact information.
+               <ul>
+                  <li>Data with special protections: we also collect sensitive information including health information (such as diagnosis) but only if you voluntarily choose to give it to us.</li>
+               </ul>
+               </li>
+            </ul>
+            <p><b>Device information</b></p>
+            <p><ul><li>As described below, we collect information from and about the computers, phones, and web-connected devices you use that integrate with our Products, and we combine this information across different devices that you use. For example, we use information collected about your use of our products on your phone to better personalise the content or features that you see when you use our Products on another device, such as your laptop or tablet.</li></ul></p>
+            <p>Information that we obtain from these devices includes:</p>
+            <ul>
+               <li>
+               <b>Device attributes:</b> ​information such as the operating system, hardware and software versions, battery level, signal strength, available storage space, browser type, app and file names and types, and plugins.
+               </li>
+               <li><b>Device operations:</b> ​information about operations and behaviours performed on the device, such as whether a window is foregrounded or backgrounded, or mouse movements (which can help distinguish humans from bots).
+               </li>
+               <li><b>Identifiers:</b> ​unique identifiers, device IDs and other identifiers, such as the apps or accounts that you use.</li>
+               <li><b>Device signals:</b> ​Bluetooth signals, information about nearby Wi-Fi access points, beacons and mobile phone masts.</li>
+               <li><b>Data from device settings:</b> ​information that you allow us to receive through device settings that you turn on, such as access to your GPS location, camera and photos.</li>
+               <li><b>Network and connections:</b> ​information such as the name of your mobile operator or ISP, language, time zone, mobile phone number, IP address, and connection speed.</li>
+               <li><b>Cookie data:</b> ​data from cookies stored on your device, including cookie IDs and settings</li>
+            </ul>
+         </li>
+         <li><p><b>How do we use this information?</b></p>
+            <p>We use the information that we have (subject to the choices you make) as described below, and to provide and support the AbleFinder Products and related services described in the AbleFinder Terms. Here’s how:</p>
+            <p><b>Provide, personalise and improve our Products.</b></p>
+            <ul>
+               <li>We use the information that we have to deliver our Products, including to personalise features and content, and make suggestions for you on and off of our products. To create personalised Products that are unique and relevant to you, we use your connections, preferences, interests and activities based on the data we collect and learn from you and others (including any data with special protections you choose to provide); how you use and interact with our Products; and the people, places, or things that you’re connected to and interested in on and off our Products.</li>
+               <li><b>Information across AbleFinder Products and devices</b>: ​we connect information about your activities on AbleFinder Products and devices to provide a more tailored and consistent experience on all AbleFinder Products that you use, wherever you use them. For example, we can make your experience more seamless by automatically filling in your registration information (such as email address) from one AbleFinder Product when you sign up for an account on a different Product.</li>
+               <li><b>Location-related information:</b> ​we use location-related information - such as your current location and the places you go - to provide, personalise, and improve our Products for you and others. Location-related information can be used on such things as precise device location (if you’ve allowed us to collect it) and IP addresses.</li>
+               <li><b>Product research and development:</b> ​we use the information we have to develop, test and improve our Products, including by conducting surveys and research, and testing and troubleshooting new products and features</li>
+            </ul>
+            <p><b>Promote safety, integrity and security.</b></p>
+            <ul>
+               <li>We use the information that we have to verify accounts and activity, combat harmful conduct, detect and prevent spam and other bad experiences, maintain the integrity of our Products, and promote safety and security on and off AbleFinder Products. For example, we use data that we have to investigate suspicious activity or breaches of our Terms and Policies, or to detect when someone needs help.</li>
+            </ul>
+            <p><b>Communicate with you.</b></p>
+            <ul><li> We use the information that we have to send you marketing communications, communicate with you about our Products and let you know about our Policies and Terms. We also use your information to respond to you when you contact us.</li></ul>
+         </li>
+         <li><p><b>How is this information shared?</b></p>
+            <p>Your information is shared with others in the following ways:</p>
+            <ul>
+               <li><p><b>People that you communicate with.</b></p> When you communicate using our Products, you choose the people with which you communicate with. For example, when you connect and chat on AbleFinder, you can choose the length, frequency, and nature of your conversation.</li>
+               <li><p><b>Public information.</b></p> Can be seen by anyone on our Products with a registered account, this includes information in your public profile on AbleFinder. You and we can provide access to or send public information to anyone on our Products with a registered account, in search results or through tools and APIs.</li>
+               <li><p><b>Content that others share or reshare about you.</b></p> You should consider who you choose to communicate what with, because people who can see your activity on our Products can choose to share it with others on and off our Products, including people and businesses outside the audience that you shared with. For example, when you send a message to a specific person, they can screenshot and re-share that content to others across or off our Products.</li>
+            </ul>
+            <p>If you are uncomfortable with what others have shared about you on our Products, you can learn how to report the content.</p>
+            <ul>
+               <li><p><b>Information about your activity status or presence on our Products.</b></p>
+               People in your networks can see signals telling them whether you are active on our Products, or when you last used our Products.
+               </li>
+               <li><p><b>Apps, websites and third-party integrations using our Products.</b></p>
+               Devices and operating systems providing native versions of AbleFinder (i.e., where we have not developed our own first-party apps) will have access to all information that you choose to share with them so that we can provide our core functionality to you.
+               </li>
+               <li><p><b>Sharing with third-party partners.</b></p>
+               We work with third-party partners who help us provide and improve our Products or who use AbleFinder tools to provide and improve their products and services. We impose strict restrictions on how our partners can use and disclose the data we provide. Here are the types of third parties that we share information with:
+               </li>
+               <li><p><b>Partners who use our analytics services.</b></p>We provide aggregated statistics and insights that help businesses understand how people are engaging with their products and services. For example, an Early Intervention Centre looking to understand the support needs of their clients and local community. We don’t share information that personally identifies you (information such as your name or email address that by itself can be used to contact you or identifies who you are) unless you give us permission.</li>
+               <li><p><b>Measurement partners.</b></p>We share information about you with companies that aggregate it to provide analytics and measurement reports to our partners.</li>
+               <li><p><b>Vendors and service providers.</b></p>We provide information and content to vendors and service providers who support our business, such as providing technical infrastructure services, analysing how our Products are used, providing customer service, facilitating payments or conducting surveys.
+               </li>
+               <li><p><b>Researchers and academics.</b></p>We also provide information and content to research partners and academics to conduct research that advances scholarship and innovation that supports our business or mission and enhances discovery and innovation on topics of general social welfare, technological advancement, public interest, health and well-being.</li>
+               <li><p><b>Law enforcement or legal requests.</b></p>
+               We share information with law enforcement or in response to legal requests in the circumstances outlined below.
+               </li>
+            </ul>
+         </li>
+         <li><p><b>How do the AbleFinder Messenger Chatbot and App work together?</b></p>
+            <p>AbleFinder’s Messenger Chatbot and App share infrastructure, systems and technology to provide an innovative, relevant, consistent, and safe experience. We also process information about you across AbleFinder Products for these purposes, as permitted by applicable law and in accordance with their Terms and Policies. For example, we process information from the Messenger Chatbot about accounts engaged in misconduct so we can take appropriate action against those accounts on the App. We also work to understand how people use and interact with AbleFinder Products, such as understanding the number of unique users on different AbleFinder Products.</p>
+         </li>
+         <li><p><b>How can I manage or delete information about me?</b></p>
+            <p>We provide you with the ability to access, rectify and delete your data. Learn more about your Ablefinder settings.</p>
+            <p>We store data until it is no longer necessary to provide our services and Products or until your account is deleted - whichever comes first. This is a case-by-case determination that depends on things such as the nature of the data, why it is collected and processed, and relevant legal or operational retention needs.</p>
+            <p>When you delete your account, we delete things that you have posted, such as your conversations and photos, and you won’t be able to recover this information later. If you don’t want to delete your account but want to temporarily stop using the Products, you can deactivate your account instead.</p>
+         </li>
+         <li><p><b>How do we respond to legal requests or prevent harm?</b></p>
+            <p>We access, preserve and share your information with regulators, law enforcement or others:</p>
+            <ul>
+               <li>In response to a legal request (e.g., a search warrant, court order or subpoena) if we have a good-faith belief that the law requires us to do so. This may include responding to legal requests from jurisdictions outside of Europe when we have good-faith belief that the response is required by law in that jurisdiction, affects users in that jurisdiction and is consistent with Internationally recognised standards.</li>
+               <li>When we have a good-faith belief that it is necessary to: detect, prevent and address fraud, unauthorised use of the Products, violations of our Terms and Policies, or other harmful or illegal activity; to protect ourselves (including our rights, property or Products), you or others, including as part of investigations or regulatory enquiries; or to prevent death or imminent bodily harm. For example, we exchange information with third-party partners about the reliability of your account to prevent fraud, abuse and other harmful activity on and off our products.</li>
+            </ul>
+            <p>Information that we receive about you (including financial transaction data related to purchases made with AbleFinder Products) can be accessed and preserved for an extended period when it is the subject of a legal request or obligation, governmental investigation or investigations of possible violations of our Terms or Policies, or otherwise to prevent harm. We also retain information from accounts disabled for term violations for at least a year to prevent abuse or other term violations.</p>
+         </li>
+         <li><p><b>How do we operate and transfer data as part of our global services?</b></p>
+            <p>We share information globally, both internally within AbleFinder Products, and externally with our partners and with those you connect and share with around the world in accordance with this policy. Your information may, for example, be transferred our transmitted to, or stored and processed in Europe or other countries outside of where you live for the purposes as described in this Policy. These data transfers are necessary to provide the services set forth in the AbleFinder Terms and to globally operate and provide our Products to you. We utilise standard contract clauses, rely on the European Commission’s adequacy decisions about certain countries, as applicable, and obtain your consent for these data transfers to Europe and other countries.</p>
+         </li>
+         <li><p><b>How will we notify you of changes to this Policy?</b></p>
+            <p>We’ll notify you before we make changes to this Policy and give you the opportunity to review the revised Policy before you choose to continue using our products.</p>
+         </li>
+         <li><p><b>How will we notify you of changes to this Policy?</b></p>
+            <p>If you have questions about this Policy, you can contact us at <a href="mailto:community@ablefinder.com">community@ablefinder.com</a></p></li>
+         </ol>          
+         </div>
+      </div>
+   </section>
+  
+<!-- Footer -->
+<section class="pre-footer">
+	<p class="mail-us">
+		<span>Are you representing a disability service provider or organisation? We’d love to talk to you! <a class="arrow-link" href="mailto:community@ablefinder.com">E-mail Us</a></span>
+	</p>
+	<div class="contact-block">
+		<div class="footer_cols">
+			<strong class="contact-title">Learn</strong>
+			<ul>
+				<li>
+					<a class="arrow-link" href="about.html" title="About Us">About Us</a>
+				</li>
+				<li>
+					<a class="arrow-link" href="ourteam.html" title="Our Team">Our Team</a>
+				</li>
+				<li>
+					<a class="arrow-link" href="community.html" title="Founding Community">Founding Community</a>
+				</li>
+				<li>
+					<a class="arrow-link" href="faq.html" title="FAQ">FAQ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer_cols">
+			<strong class="contact-title">Get involved</strong>
+			<ul>
+				<li>
+					<a class="arrow-link" href="http://instagram.com/ablefinder" title="#IAMBLE">#IAMBLE</a>
+				</li>
+				<li>
+					<a class="arrow-link" href="work-with-us.html" title="Work with us">Work with us</a>
+				</li>
+				<li>
+					<a class="arrow-link" href="https://www.paypal.me/AbleFinderPtyLtd" title="Donate">Donate</a>
+				</li>
+				<li>
+					<a class="arrow-link" href="event.html" title="Events">Events</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer_cols">
+			<strong class="contact-title">Share</strong>
+			<ul>
+				<!-- <li><a class="arrow-link trigger" data-target="modalFeedback" href="#">Your feedback</a></li> -->
+				<li>
+					<a class="arrow-link" target="_blank" href="https://forms.gle/EaXJqPiAJmJB4HsY8">Your feedback</a>
+				</li>
+				<li>
+					<a class="arrow-link" target="_blank" href="https://forms.gle/249vLJycexvP6d8R6">Your story</a>
+				</li>
+				<li>
+					<a class="arrow-link" target="_blank" href="https://forms.gle/3BHSFpdeGfby7wBJ8">Get in touch</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<nav class="footerNav">
+		<li>
+			<a href="privacypolicy.html" title="Privacy Policy">Privacy Policy</a>
+		</li>
+		<li>
+			<a href="terms.html" title="Terms & Conditions">Terms &amp; Conditions </a>
+		</li>
+	</nav>
+	<ul class="footerInfo">
+		<li>
+			<a href="https://www.facebook.com/ablefinder/" target="_blank">
+				<img class="fa" src="images/facebook.svg" alt="#" />
+			</a>
+		</li>
+		<li>
+			<a href="https://www.linkedin.com/company/ablefinder-inc/?originalSubdomain=au" target="_blank">
+				<img class="li" src="images/linkedin.svg" alt="#" />
+			</a>
+		</li>
+		<li>
+			<a href="https://www.instagram.com/ablefinder/" target="_blank">
+				<img class="in" src="images/insta.svg" alt="#" />
+			</a>
+		</li>
+		<li>
+			<a href="https://medium.com/@ablefinder" target="_blank">
+				<img class="me" src="images/medium.svg" alt="#" />
+			</a>
+		</li>
+	</ul>
+	<p>&copy; 2019 AbleFinder</p>
+</footer>
+
+<!-- //= modal.html -->
+<!-- //= modalFinish.html -->
+<!--//= modalFinish.html-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- zz<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/owl.carousel.min.js"></script> -->
+
+
+<script type="text/javascript">
+	$(function () {
+		$('.lazy').Lazy({
+			visibleOnly: true,
+			afterLoad: function (element) {
+				console.log('image loaded');
+			},
+			onFinishedAll: function () {
+				console.log('everything loaded');
+			}
+		});
+	});
+	$(window).bind("load", function () {
+		$('#page-preloader').hide();
+		$('body').removeClass('loader');
+	});
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142811669-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date()); gtag('config', 'UA-142811669-1'); window.URL_FORM_FEEDBACK = "http:\/\/www.ablefinder.com.au\/formfeedback"; window.URL_FORM_STORY = "http:\/\/www.ablefinder.com.au\/formstory"; window.URL_FORM_CONTACT = "http:\/\/www.ablefinder.com.au\/formcontact";
+</script>
+<!-- Footer /end -->
+</body>
+</html>

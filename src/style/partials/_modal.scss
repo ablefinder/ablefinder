@@ -1,0 +1,223 @@
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleX(1.1) scaleY(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 999;
+}
+
+.modal-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  background-color: $white;
+  width: 760px;
+  height: 90%;
+  overflow-y: scroll;
+  max-height: 757px;
+  -webkit-overflow-scrolling: touch;
+  @media screen and (max-width: $mobile-breakpoint) {
+    width: calc(100% - 30px);
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-image: url('../images/close_modal_ico.svg');
+  background-size: 16px 16px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  cursor: pointer;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scaleX(1.0) scaleY(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-header {
+  padding: 40px 90px 0;
+  @media screen and (max-width: $mobile-breakpoint) {
+    padding: 40px 20px 0;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-family: $font-family-bold;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: $black;
+    margin: 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: left;
+    color: $text-color;
+    margin-top: 5px;
+  }
+}
+
+.modal-content {
+  margin: 24px 0;
+  padding: 0 80px;
+  @media screen and (max-width: $mobile-breakpoint) {
+    padding: 0 20px;
+  }
+}
+
+.main-form {
+  padding: 45px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: flex-start;
+}
+
+.field {
+  margin-bottom: 30px;
+  width: calc(50% - 15px);
+  &:last-child {
+    margin: 0;
+  }
+  &.full-width{
+    width: 100%;
+  }
+  @media screen and (max-width: $layout-breakpoint) {
+    width: 100%;
+  }
+  p{
+    font-size: 14px;
+    color: $red;
+    display: none;
+  }
+  
+  .floating-label {
+    position: relative;
+  }
+  .floating-input,
+  .floating-select {
+    font-size: 18px;
+    text-align: left;
+    color: $black;
+    display: block;
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $light-gray;
+  }
+  .floating-select {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    border-radius: 0;
+  }
+  .select-holder{
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 0;
+      right: 3px;
+      display: block;
+      content: " ";
+      width:6px;
+      height:100%;
+      background-image: url('../images/link_arrow_ico.svg');
+      background-size: 6px 12px;
+      background-repeat: no-repeat;
+      background-position: 0 50%;
+      transform: rotate(90deg);
+    }
+  }
+  .floating-input:focus,
+  .floating-select:focus {
+    outline: none;
+    border-color:$black;
+  }
+
+  label {
+    font-size: 18px;
+    text-align: left;
+    color: $text-color;
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 2px;
+    font-family: $font-family-base;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+
+  .floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+    top: -20px;
+    font-size: 14px;
+  }
+
+  .floating-select:focus ~ label, .floating-select:not([value=""]):valid ~ label {
+    top: -20px;
+    font-size: 14px;
+  }
+  .floating-textarea {
+    height: 100px;
+    border: solid 1px #e5e5e5;
+    resize: none;
+    padding: 15px;
+
+    ~label{
+      left: 15px;
+    }
+  }
+  &.error-block{
+    p{
+      display: block;
+    }
+    .floating-input,
+    .floating-select {
+      border-color: $red;
+    }
+    }
+}
+.go-btn{
+  font-family: $font-family-base;
+  font-size: 20px;
+  color: $white;
+  width: 166px;
+  height: 44px;
+  border-radius: 22px;
+  background-color: $link-color;
+  border: solid 1px $link-color;
+  padding: 0;
+}
+.finish-text{
+  font-size: 32px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: $black;
+  font-family: $font-family-bold;
+  margin:50px 0;
+}
+

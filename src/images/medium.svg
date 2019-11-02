@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Af-Landin-messager-web" transform="translate(-860.000000, -4529.000000)">
+            <g id="Footer" transform="translate(0.000000, 4517.000000)">
+                <g id="Group-14" transform="translate(720.000000, 3.000000)">
+                    <g id="linkedin" transform="translate(132.000000, 0.000000)">
+                        <rect id="Rectangle" x="0" y="0" width="34" height="34"></rect>
+                        <g id="(Logo)-Medium" transform="translate(8.000000, 9.000000)" fill="#737373" fill-rule="nonzero">
+                            <g id="Medium-icon">
+                                <path d="M2.1345,3.27 C2.157,3.04875 2.07225,2.8305 1.90725,2.682 L0.22725,0.657 L0.22725,0.35475 L5.445,0.35475 L9.4785,9.201 L13.0245,0.35475 L18,0.35475 L18,0.657 L16.56225,2.03475 C16.4385,2.12925 16.377,2.2845 16.4025,2.43825 L16.4025,12.56325 C16.377,12.71625 16.4385,12.87075 16.56225,12.966 L17.96475,14.34375 L17.96475,14.646 L10.90725,14.646 L10.90725,14.34375 L12.36,12.93225 C12.5025,12.78975 12.5025,12.74775 12.5025,12.52875 L12.5025,4.3455 L8.46,14.6115 L7.91475,14.6115 L3.2085,4.3455 L3.2085,11.226 C3.1695,11.5155 3.2655,11.8065 3.46875,12.01575 L5.35875,14.31075 L5.35875,14.61225 L0,14.61225 L0,14.31 L1.89,12.015 C2.0925,11.8065 2.1825,11.5125 2.1345,11.226 L2.1345,3.27 Z" id="Shape"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

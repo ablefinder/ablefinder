@@ -1,0 +1,134 @@
+.ourteam-page{
+  #ourMission{
+    padding-top:0;
+  }
+  .mission-promo{
+    margin-bottom:50px;
+    background-image: url('../images/ourteam_header.jpg');
+    @include image-2x("../images/ourteam_header@2x.jpg", cover, cover);
+  }
+}
+.leadership-holder{
+  max-width: 945px;
+  margin: 0 auto;
+  h2{
+    margin-left: 195px;
+    @media screen and (max-width: $layout-breakpoint) {
+      margin: 0;
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: $mobile-breakpoint) and (max-width: $layout-breakpoint) {
+    padding: 0 24px;
+  }
+  @media screen and (max-width: $mobile-breakpoint) {
+    padding: 0 15px;
+  }
+}
+.leadership-block{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  margin-top: 32px;
+  @media screen and (min-width: $mobile-breakpoint) and (max-width: $layout-breakpoint) {
+    display: block;
+  }
+  @media screen and (max-width: $mobile-breakpoint) {
+    display: block;
+  }
+}
+.leadership-img{
+  width: 160px;
+  margin-right: 35px;
+  min-width: 160px;
+  @media screen and (max-width: $layout-breakpoint) {
+    margin: 0 auto 12px;
+  }
+}
+.leadership-content{
+  margin-bottom:20px;
+  h4{
+    font-weight: normal;
+    font-family: $font-family-bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color:$black;
+  }
+  span{
+    font-size: 18px;
+    color:$black;
+    display: block;
+    margin-bottom: 15px;
+  }
+  p{
+    font-size: 18px;
+    line-height: 1.56;
+    color: $text-color;
+    margin-bottom:15px;
+    @media screen and (max-width: $layout-breakpoint) {
+      font-size: 16px;
+    }
+  }
+}
+.directors-block{
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  padding-top: 32px;
+  padding-bottom: 56px;
+  @media screen and (max-width: $layout-breakpoint) {
+    padding-top:24px;
+    padding-bottom: 44px;
+  }
+  h4{
+    font-size: 24px;
+    font-weight: normal;
+    font-family: $font-family-bold;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: $black;
+    margin-bottom: 16px;
+  }
+  p{
+    font-size: 18px;
+    color: $text-color;
+    @media screen and (max-width: $layout-breakpoint) {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+    span{
+      font-size: 18px;
+      text-align: left;
+      color: $black;
+      display: inline-block;
+      margin-right: 24px;
+      @media screen and (max-width: $layout-breakpoint) {
+        display: block;
+        font-size: 16px;
+      }
+    }
+  }
+}
+.pr-block{
+  padding: 32px 0;
+  h4{
+    font-size: 24px;
+    font-weight: normal;
+    font-family: $font-family-bold;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: $black;
+    margin-bottom: 16px;
+  }
+  a{
+    font-size: 18px;
+    @media screen and (max-width: $layout-breakpoint) {
+      font-size: 16px;
+    }
+  }
+}

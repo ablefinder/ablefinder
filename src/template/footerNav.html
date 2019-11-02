@@ -1,0 +1,129 @@
+<section class="pre-footer">
+	<p class="mail-us">
+		<span>Are you representing a disability service provider or organisation? We’d love to talk to you! <a class="arrow-link" href="mailto:community@ablefinder.com">E-mail Us</a></span>
+	</p>
+	<div class="contact-block">
+		<div class="footer_cols">
+			<strong class="contact-title">Learn</strong>
+			<ul>
+				<li>
+					<a class="arrow-link" href="about.html" title="About Us">About Us</a>
+				</li>
+				<li>
+					<a class="arrow-link" href="ourteam.html" title="Our Team">Our Team</a>
+				</li>
+				<li>
+					<a class="arrow-link" href="community.html" title="Founding Community">Founding Community</a>
+				</li>
+				<li>
+					<a class="arrow-link" href="faq.html" title="FAQ">FAQ</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer_cols">
+			<strong class="contact-title">Get involved</strong>
+			<ul>
+				<li>
+					<a class="arrow-link" href="http://instagram.com/ablefinder" title="#IAMBLE">#IAMBLE</a>
+				</li>
+				<li>
+					<a class="arrow-link" href="work-with-us.html" title="Work with us">Work with us</a>
+				</li>
+				<li>
+					<a class="arrow-link" href="https://www.paypal.me/AbleFinderPtyLtd" title="Donate">Donate</a>
+				</li>
+				<li>
+					<a class="arrow-link" href="event.html" title="Events">Events</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer_cols">
+			<strong class="contact-title">Share</strong>
+			<ul>
+				<!-- <li><a class="arrow-link trigger" data-target="modalFeedback" href="#">Your feedback</a></li> -->
+				<li>
+					<a class="arrow-link" target="_blank" href="https://forms.gle/EaXJqPiAJmJB4HsY8">Your feedback</a>
+				</li>
+				<li>
+					<a class="arrow-link" target="_blank" href="https://forms.gle/249vLJycexvP6d8R6">Your story</a>
+				</li>
+				<li>
+					<a class="arrow-link" target="_blank" href="https://forms.gle/3BHSFpdeGfby7wBJ8">Get in touch</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<nav class="footerNav">
+		<li>
+			<a href="privacypolicy.html" title="Privacy Policy">Privacy Policy</a>
+		</li>
+		<li>
+			<a href="terms.html" title="Terms & Conditions">Terms &amp; Conditions </a>
+		</li>
+	</nav>
+	<ul class="footerInfo">
+		<li>
+			<a href="https://www.facebook.com/ablefinder/" target="_blank">
+				<img class="fa" src="images/facebook.svg" alt="#" />
+			</a>
+		</li>
+		<li>
+			<a href="https://www.linkedin.com/company/ablefinder-inc/?originalSubdomain=au" target="_blank">
+				<img class="li" src="images/linkedin.svg" alt="#" />
+			</a>
+		</li>
+		<li>
+			<a href="https://www.instagram.com/ablefinder/" target="_blank">
+				<img class="in" src="images/insta.svg" alt="#" />
+			</a>
+		</li>
+		<li>
+			<a href="https://medium.com/@ablefinder" target="_blank">
+				<img class="me" src="images/medium.svg" alt="#" />
+			</a>
+		</li>
+	</ul>
+	<p>&copy; 2019 AbleFinder</p>
+</footer>
+
+<!-- //= modal.html -->
+<!-- //= modalFinish.html -->
+<!--//= modalFinish.html-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+
+<script src="js/main.js"></script>
+
+<!-- zz<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.3/owl.carousel.min.js"></script> -->
+
+
+<script type="text/javascript">
+	$(function () {
+		$('.lazy').Lazy({
+			visibleOnly: true,
+			afterLoad: function (element) {
+				console.log('image loaded');
+			},
+			onFinishedAll: function () {
+				console.log('everything loaded');
+			}
+		});
+	});
+	$(window).bind("load", function () {
+		$('#page-preloader').hide();
+		$('body').removeClass('loader');
+	});
+</script>
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142811669-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date()); gtag('config', 'UA-142811669-1'); window.URL_FORM_FEEDBACK = "http:\/\/www.ablefinder.com.au\/formfeedback"; window.URL_FORM_STORY = "http:\/\/www.ablefinder.com.au\/formstory"; window.URL_FORM_CONTACT = "http:\/\/www.ablefinder.com.au\/formcontact";
+</script>

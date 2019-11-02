@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'calibri';
+  src: url('../fonts/calibri.ttf');
+}
+@font-face {
+  font-family: 'calibri-bold';
+  src: url('../fonts/calibriBold.ttf');
+}
+@font-face {
+  font-family: 'calibri-italic';
+  src: url('../fonts/calibriItalic.ttf');
+}
+
+$font-family-sans-serif    : calibri, sans-serif;
+$font-family-italic        : calibri-italic;
+$font-family-bold          : calibri-bold;
+$font-family-base          : $font-family-sans-serif;
+$font-size-base            : 18px;
+$line-height-base          : 1.56;
+$layout-breakpoint         : 1200px;
+$mobile-breakpoint         : 768px;
+
+
+$white                     : #fff;
+$black                     : #000;
+$text-color                : #737373;
+$text-color-second         : #4a4a4a;
+$link-color                : #0084ff;
+$link-color-hover          : #004280;
+$blue-button-color         : #007fff;
+$light-gray                : #e5e5e5;
+$footer-nav-bg             : #f4f4f4;
+$white-two                 : #f7f7f7;
+$img-block-color           : #deedff;
+$info-block-color          : #f4f4f4;
+$clear-blue                : #2087fa;
+$red                       : #d74e4e;

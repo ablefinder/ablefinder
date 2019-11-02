@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Back arrow button</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18,36 C27.9411255,36 36,27.9411255 36,18 C36,8.0588745 27.9411255,0 18,0 C8.0588745,0 0,8.0588745 0,18 C0,27.9411255 8.0588745,36 18,36 Z" id="path-1"></path>
+        <path d="M18,36 C27.9411255,36 36,27.9411255 36,18 C36,8.0588745 27.9411255,0 18,0 C8.0588745,0 0,8.0588745 0,18 C0,27.9411255 8.0588745,36 18,36 Z" id="path-2"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AF-About-Us-Our-History" transform="translate(-128.000000, -178.000000)">
+            <g id="Group-2" transform="translate(127.000000, 170.000000)">
+                <g id="Group-9" transform="translate(1.000000, 8.000000)">
+                    <g id="Back-arrow-button">
+                        <g id="Icon">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <path stroke="#000000" stroke-width="1" d="M18,35.5 C27.6649831,35.5 35.5,27.6649831 35.5,18 C35.5,8.33501688 27.6649831,0.5 18,0.5 C8.33501688,0.5 0.5,8.33501688 0.5,18 C0.5,27.6649831 8.33501688,35.5 18,35.5 Z"></path>
+                        </g>
+                        <g id="Icon">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <path stroke="#CDCED2" stroke-width="1" d="M18,35.5 C27.6649831,35.5 35.5,27.6649831 35.5,18 C35.5,8.33501688 27.6649831,0.5 18,0.5 C8.33501688,0.5 0.5,8.33501688 0.5,18 C0.5,27.6649831 8.33501688,35.5 18,35.5 Z"></path>
+                        </g>
+                        <polygon id="Back-arrow" fill="#CDCED2" points="20.215 9 11 18 20.215 27 22 25.225 14.602 18 22 10.775"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

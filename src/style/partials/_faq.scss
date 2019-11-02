@@ -1,0 +1,115 @@
+p.faq_intro_txt{
+  color: $black;
+  font-size: 24px;
+  line-height: 1.625em;
+  text-align: left;
+}
+
+.faq_content{
+  .inner_wrap{
+    width: 100%;
+    .expand_all_toggle{
+      float: right;
+      clear: both;
+      width:100%;
+      font-size: 17px;
+      display: block;
+      cursor: pointer;
+      min-width:175px;
+      color:$link-color;
+      padding:4px 10px;
+      margin-bottom:20px;
+      text-align: center;
+      position: relative;
+      display: inline-block;
+      border:1px solid $link-color;
+      transition: border .3s ease-in-out;
+      &:before {
+        top: 50%;
+        width:14px;
+        height:8px;
+        right: 20px;
+        content: '';
+        position: absolute;
+        transform: translateY(-50%);
+        transform-origin:center center;
+        background:url('../images/acc_arrow.png') center center no-repeat;
+        background-size: contain;
+        transition: transform 0.3s ease-in-out;
+      }
+      &:hover{
+        border-color: $link-color-hover;
+      }
+      &.open{
+        &:before{
+          transform:translateY(-50%) rotate(180deg);
+        }
+        .expand{
+          display: none;
+        }
+        .collapse{
+          display: block;
+        }
+      }
+      .collapse{
+        display: none;
+      }
+    }
+    @media (min-width:550px){
+      .expand_all_toggle{
+        width:auto;
+      }
+    }
+    .acc_wrapper{
+      clear:both;
+      margin-bottom: 15px;
+      border:1px solid #EBEBEB;
+      background-color: #F9F9F9;
+      .acc_toggle {
+        width:100%;
+        color: $link-color;
+        display: block;
+        cursor: pointer;
+        font-size: 20px;
+        position: relative;
+        font-weight: normal;
+        padding:20px 50px 20px 20px;
+        font-family: $font-family-sans-serif;
+        line-height: 1.5em;
+        transition: color 0.3s ease-in-out;
+        &:before {
+          top: 50%;
+          right: 20px;
+          width:14px;
+          height:8px;
+          content: '';
+          position: absolute;
+          transform: translateY(-50%);
+          transform-origin:center center;
+          background:url('../images/acc_arrow.png') center center no-repeat;
+          background-size: contain;
+          transition: transform 0.3s ease-in-out;
+        }
+        &:hover{
+          color:$link-color-hover;
+        }
+        &.active{
+          &:before{
+            transform:translateY(-50%) rotate(-180deg);
+          }
+        }
+      }
+      @media(min-width:$mobile-breakpoint) {
+        .acc_toggle {
+          font-size: 24px
+        }
+      }
+
+      .acc_content {
+        padding:0 20px 20px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+
