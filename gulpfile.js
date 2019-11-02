@@ -3,6 +3,7 @@
 var gulp = require('gulp'),
     debug = require('gulp-debug'),
     watch = require('gulp-watch'),
+	ghPages = require('gulp-gh-pages'),
     prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
@@ -16,6 +17,7 @@ var gulp = require('gulp'),
     plumber = require('gulp-plumber'),
     browserSync = require("browser-sync"),
     reload = browserSync.reload;
+
 
 var path = {
     build: {
@@ -52,7 +54,10 @@ var config = {
     logPrefix: "Frontend_Rockstar"
 };
 
-
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+});
 
 gulp.task('webserver', function () {
     browserSync(config);
