@@ -1,10 +1,16 @@
 //= template/head.html
 </head>
-<body>
-<section class="header">
-  //= template/header.html
-</section>
-//= template/mobileNav.html
+<!-- End or head -->
+
+<body class="loader" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Header part -->
+  //= template/preloader.html
+  <section class="header">
+    //= template/header.html
+  </section>
+  //= template/mobileNav.html
+  <!-- Header part /end -->
+
 <section class="wrapper">
   <section class="story-content">
     <div class="story-img img-block"></div>
@@ -41,8 +47,10 @@
       </div>
     </section>
   </section>
-  //= template/footerNav.html
 </section>
+
+<!-- Footer -->
+//= template/footerNav.html
+<!-- Footer /end -->
 </body>
 </html>
-

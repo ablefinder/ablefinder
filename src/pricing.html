@@ -1,10 +1,16 @@
 //= template/head.html
 </head>
-<body>
-<section class="header">
-  //= template/header.html
-</section>
-//= template/mobileNav.html
+<!-- End or head -->
+
+<body class="loader" itemscope itemtype="http://schema.org/WebPage">
+  <!-- Header part -->
+  //= template/preloader.html
+  <section class="header">
+    //= template/header.html
+  </section>
+  //= template/mobileNav.html
+  <!-- Header part /end -->
+
 <section class="wrapper pricing-page">
   <section id="ourMission">
     <div class="mission-promo">
@@ -69,7 +75,10 @@
       </div>
     </div>
   </section>
-  //= template/footerNav.html
 </section>
+
+<!-- Footer -->
+//= template/footerNav.html
+<!-- Footer /end -->
 </body>
 </html>
