@@ -1,0 +1,11 @@
+# Site settings
+title: AbleFinder - Connect with parents on similar journeys.
+description: "The AbleFinder App is revolutionizing the way in which parents of children with disability connect, inform, and empower each other."
+url: "https://ablefinder.com"
+author:
+  name: "Kostadin Dinkov"
+  email: "community@ablefinder.com"
+  url: "https://ablefinder.com"
+
+gems: 
+  - jekyll-sitemap
