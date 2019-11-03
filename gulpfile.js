@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     debug = require('gulp-debug'),
     watch = require('gulp-watch'),
 	ghPages = require('gulp-gh-pages'),
+	sitemap = require('gulp-sitemap'),
     prefixer = require('gulp-autoprefixer'),
     uglify = require('gulp-uglify'),
     sass = require('gulp-sass'),
@@ -58,6 +59,17 @@ gulp.task('deploy', function() {
   return gulp.src('./build/**/*')
     .pipe(ghPages());
 });
+
+gulp.task('sitemap', function () {
+    gulp.src('build/**/*.html', {
+            read: false
+        })
+        .pipe(sitemap({
+            siteUrl: 'https://ablefinder.com'
+        }))
+        .pipe(gulp.dest('./build'));
+});
+
 
 gulp.task('webserver', function () {
     browserSync(config);
