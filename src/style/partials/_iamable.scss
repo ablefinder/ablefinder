@@ -1,5 +1,9 @@
+
 .img-block {
+  background-size: cover;
   background-color: $img-block-color;
+  background-position: center center;
+  background-repeat: no-repeat;
   @media screen and (max-width: $mobile-breakpoint) {
     height: 320px;
   }
@@ -30,11 +34,19 @@
   justify-content: flex-start;
   align-content: flex-start;
   align-items: stretch;
-  // height: 718px;
   background-color: $white-two;
   @media screen and (max-width: $mobile-breakpoint) {
     display: block;
-    height: auto;
+  }
+  .img-block{
+    background-image: url('../images/iam_bg_320.jpg');
+    @media screen and (min-width: $mobile-breakpoint) {
+      background-image: url('../images/iam_bg_768.jpg');
+    }
+    @media screen and (min-width: $layout-breakpoint) {
+      background-image: url('../images/iam_bg_1200.jpg');
+    }
+
   }
 
   > div {
@@ -67,9 +79,14 @@
     text-align: left;
     color: $black;
     font-family: $font-family-bold;
+    margin-top: 75px;
     @media screen and (max-width: $mobile-breakpoint) {
+      margin-top: 0;
       font-size: 32px;
       letter-spacing: 0.2px;
+    }
+    @media screen and (max-width: $layout-breakpoint) {
+      font-size: 40px;
     }
   }
   p {
@@ -81,25 +98,25 @@
     @media screen and (max-width: $mobile-breakpoint) {
       font-size: 16px;
       line-height: 1.63;
-      margin: 24px 0;
+      margin: 24px 0 0;
     }
   }
   .top-text {
-    padding: 100px 30px;
+    padding: 15px 30px 30px;
+      .round-border-btn {
+        margin-bottom:30px;
+      }
     @media screen and (max-width: $mobile-breakpoint) {
+      .round-border-btn {
+        margin:15px 0 0;
+      }
       padding: 54px 15px 30px;
     }
   }
-  .donate-mobile {
-    display: none;
-    padding: 30px 0;
-    @media screen and (max-width: $mobile-breakpoint) {
-      display: block;
-      text-align: center;
-    }
-  }
 }
-
+.sharethis-inline-share-buttons{
+  margin-bottom:50px;
+}
 .round-border-btn {
   font-size: 16px;
   text-align: left;
@@ -119,12 +136,12 @@
   background-color: $clear-blue;
   border: solid 1px $link-color;
   position: absolute;
-  bottom: -40px;
   @include centerer($horizontal: true, $vertical: false);
   transition: all .3s;
   white-space: nowrap;
-  @media screen and (max-width: $mobile-breakpoint) {
-    bottom: 40px;
+  bottom: 40px;
+  @media screen and (min-width: $layout-breakpoint) {
+    bottom: -40px;
   }
 }
 
@@ -147,6 +164,7 @@
 .stories-wrapper {
   width: 944px;
   margin: 0 auto;
+  max-width:100%;
   @media screen and (max-width: $layout-breakpoint) {
     width: 768px;
     padding: 0 24px;
@@ -161,12 +179,15 @@
   margin-bottom: 30px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   align-content: center;
-  // @media screen and (max-width: $mobile-breakpoint) {
-  //   display: block;
-  // }
+  @media screen and (max-width: $mobile-breakpoint) {
+    display: block;
+  }
+}
+.hide{
+  display: none;
 }
 
 .stories-block {
@@ -174,13 +195,10 @@
   overflow: hidden;
   position: relative;
   transition: all .3s;
-  .round-blue-btn {
-    width: 100%;
-    bottom: 20px!important;
-    max-width: 90%;
-    font-size: 14px;
-    padding: 6px 10px;
-    text-align: center;
+  img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
   }
   &:hover {
     .round-blue-btn {
@@ -188,37 +206,7 @@
     }
   }
 }
-.fluid{
-  width: calc(100% + 10px);
-  margin-left: -5px;
-  .stories-block{
-    height: auto;
-    font-size: 0;
-    margin: 0 5px 10px;
-    width: calc(100% - 10px);
-    flex-basis: calc(100% - 10px);
-    @media screen and (min-width: 400px) {
-      width: calc(50% - 10px);
-      flex-basis: calc(50% - 10px);
-    }
-    @media screen and (min-width: 640px) {
-      width: calc(33.333% - 10px);
-      flex-basis: calc(33.333% - 10px);
-    }
-    @media screen and (min-width: $mobile-breakpoint) {
-      width: calc(25% - 10px);
-      flex-basis: calc(25% - 10px);
-    }
-    @media screen and (min-width: $layout-breakpoint) {
-      width: calc(20% - 10px);
-      flex-basis: calc(20% - 10px);
-    }
-    img{
-      max-width: 100%;
-      width: 100%;
-    }
-  }
-}
+
 .block-3 {
   .stories-block {
     width: 295px;
@@ -271,16 +259,12 @@
 }
 
 .donate-block {
-  background-image: url('../images/help_block_ico.svg');
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-size: 145px 115px;
-  padding: 120px 0 0;
   @include centerer($horizontal: true, $vertical: true);
   text-align: center;
+  width:80%;
   @media screen and (max-width: $mobile-breakpoint) {
     background-size: 110px 87px;
-    padding: 100px 0 0;
+    // padding: 100px 0 0;
   }
   p {
     font-size: 32px;
@@ -289,8 +273,9 @@
     text-align: center;
     color: $black;
     margin: 12px 0 35px;
-    white-space: nowrap;
-
+    @media screen and (max-width: $layout-breakpoint) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -304,7 +289,7 @@
     background-color: $img-block-color;
     @media screen and (max-width: $layout-breakpoint) {
       width: 220px;
-      height: 220px;
+      height: 260px;
     }
 
   }
@@ -341,6 +326,10 @@
     color: $text-color;
     font-family: $font-family-italic;
     margin: 12px 0;
+    @media screen and (max-width: $layout-breakpoint) {
+      max-height: 51px;
+      overflow: hidden;
+    }
   }
 }
 

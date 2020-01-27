@@ -29,7 +29,7 @@ var path = {
         fonts: 'build/fonts/'
     },
     src: {
-        html: 'src/*.html',
+        html: 'src/**/*.html',
         js: 'src/js/main.js',
         style: 'src/style/all.scss',
         images: 'src/images/**/*.*',
@@ -83,6 +83,7 @@ gulp.task('html:build', function () {
     gulp.src(path.src.html)
         .pipe(plumber())
         .pipe(rigger())
+        .pipe(debug({ title: 'unicorn:' }))
         .pipe(gulp.dest(path.build.html))
         .pipe(reload({stream: true}));
 });
