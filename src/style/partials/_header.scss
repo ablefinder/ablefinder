@@ -1,71 +1,82 @@
 .header {
   height: 50px;
-  position:fixed;
-  z-index:2;
-  top:0;
-  left:0;
-  width:100%;
-  transition:transform .3s;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s;
   @include clearfix();
-  &.fixed{
-    transform:translateY(-50px);
+  &.fixed {
+    transform: translateY(-50px);
     @media screen and (max-width: $layout-breakpoint) {
-      transform:translateY(-40px)
+      transform: translateY(-40px);
     }
   }
   @media screen and (max-width: $layout-breakpoint) {
-    height:80px;
+    height: 80px;
   }
-  &.double-header{
-    height: 100px;
+  &.double-header {
+    height: 50px;
   }
 }
-.headerTopHolder{
-  background-color:$white;
+.headerTopHolder {
+  background-color: $white;
   border-bottom: 1px solid $light-gray;
   height: 50px;
   @media screen and (max-width: $layout-breakpoint) {
     height: 40px;
   }
-  .app_link_wrap{
+  .app_link_wrap {
     margin: 7px 0 0 20px;
-    a{
+    span {
+      color: #000 !important;
+      font-size: 15px !important;
+      font-weight: 600 !important;
+    }
+    a {
       line-height: 0;
       height: 36px;
       margin-left: 5px;
-      img{
+      img {
         height: 100%;
         width: auto;
       }
     }
   }
 }
-.headerTop{
-  padding:0 60px 0 22px;
+.headerTop {
+  padding: 0 60px 0 22px;
   @include clearfix();
   max-width: 1200px;
-  margin:0 auto;
+  margin: 0 auto;
   @media screen and (max-width: $layout-breakpoint) {
-    padding:0 15px;
+    padding: 0 15px;
+  }
+
+  @media screen and (max-width: $layout-breakpoint) {
+    .mainNav {
+      display: none !important;
+    }
   }
 }
-.logo{
+.logo {
   width: 114px;
   height: 30px;
   display: block;
-  background-image: url('../images/logo.svg');
-  background-size: 114px 30px;
+  background-image: url("../images/updated_images/logo.png");
+  background-size: contain;
   background-position: 0 0;
   background-repeat: no-repeat;
   text-indent: -9999px;
   float: left;
-  margin-top: 10px;
+  margin-top: 13px;
+  font-size: 10px !important;
   @media screen and (max-width: $layout-breakpoint) {
     margin-top: 5px;
   }
 }
-.mainNav{
-  float: right;
+.mainNav {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -77,21 +88,21 @@
     display: none;
   }
 
-  li{
-    margin:0 0 0 40px;
-    &.navButton{
-      a{
+  li {
+    margin: 0 0 0 40px;
+    &.navButton {
+      a {
         height: 34px;
-        line-height:34px;
+        line-height: 34px;
         border-radius: 22px;
         border: solid 1px #0084ff;
-        padding:0 33px;
-        &:hover{
-          border-color: $link-color-hover;;
+        padding: 0 33px;
+        &:hover {
+          border-color: $link-color-hover;
         }
       }
     }
-    a{
+    a {
       font-family: $font-family-sans-serif;
       font-size: 16px;
       line-height: 1.63;
@@ -99,66 +110,66 @@
       color: $link-color;
       display: inline-block;
 
-      &:hover{
+      &:hover {
         color: $link-color-hover;
       }
     }
   }
 }
-.headerBottomHolder{
-  background-color:$white;
+.headerBottomHolder {
+  background-color: $white;
   border-bottom: 1px solid $light-gray;
   opacity: 0.95;
 }
-.secondNav::-webkit-scrollbar{
-  display:none
+.secondNav::-webkit-scrollbar {
+  display: none;
 }
-.secondNav{
+.secondNav {
   @include clearfix();
-  width:100%;
-  height:50px;
-  text-align:center;
+  width: 100%;
+  height: 50px;
+  text-align: center;
   -ms-overflow-style: none;
-  white-space:nowrap;
-  overflow:hidden;
+  white-space: nowrap;
+  overflow: hidden;
   @media screen and (max-width: $layout-breakpoint) {
-    height:40px;
+    height: 40px;
   }
 
   @media screen and (max-width: $mobile-breakpoint) {
-    overflow:scroll;
+    overflow: scroll;
     display: flex;
-    width:100%;
-    justify-content:space-between;
-    align-items:center;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  li{
-    margin:10px 0 0 25px;
-    display:inline-block;
-    position:relative;
-    white-space:nowrap;
+  li {
+    margin: 10px 0 0 25px;
+    display: inline-block;
+    position: relative;
+    white-space: nowrap;
     @media screen and (max-width: $layout-breakpoint) {
-      margin:5px 0 0 25px;
+      margin: 5px 0 0 25px;
     }
     @media screen and (max-width: $mobile-breakpoint) {
-      margin:0;
+      margin: 0;
     }
-    a{
+    a {
       font-family: $font-family-sans-serif;
       font-size: 16px;
       line-height: 30px;
       height: 30px;
-      padding:0 25px;
+      padding: 0 25px;
       color: $text-color;
       display: inline-block;
       border-radius: 22px;
-      transition:color .2s;
-      transition:background-color .2s ;
+      transition: color 0.2s;
+      transition: background-color 0.2s;
       @media screen and (max-width: $mobile-breakpoint) {
-        padding:0 13px;
+        padding: 0 13px;
       }
-      &.active{
+      &.active {
         color: $black;
         background-color: #e5e5e5;
       }
@@ -171,7 +182,7 @@
   position: relative;
   margin: 12px 0 0;
   transform: rotate(0deg);
-  transition: .5s ease-in-out;
+  transition: 0.5s ease-in-out;
   cursor: pointer;
   float: right;
   display: none;
@@ -189,7 +200,7 @@
   opacity: 1;
   left: 0;
   transform: rotate(0deg);
-  transition: .25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 #nav-icon span:nth-child(1) {
   top: 0px;
