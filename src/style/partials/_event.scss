@@ -724,26 +724,21 @@
 
 #eventLandingSection {
   min-height: 100vh;
-  position: relative;
   background-image: linear-gradient(#147ffac2, #147ffac2),
     url("../../images/updated_images/landing_img.svg");
   .landingContent {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -40%);
-
     h1 {
       font-weight: bold;
       font-size: 56px;
       color: #fff;
       margin-bottom: 30px;
+      padding-top: 30px;
     }
 
     .vidContainer {
-      width: 700px;
-      height: 400px;
-      background-color: #000;
+      max-width: 700px;
+      max-height: 400px;
+      margin: auto;
     }
   }
 }
