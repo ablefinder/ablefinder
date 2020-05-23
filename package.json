@@ -13,7 +13,6 @@
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-debug": "^4.0.0",
-    "gulp-gh-pages": "^0.5.4",
     "gulp-newer": "^1.4.0",
     "gulp-sitemap": "^7.6.0"
   },
@@ -21,6 +20,7 @@
     "browser-sync": "^2.26.7",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-clean-css": "^3.10.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-rigger": "^0.5.8",
