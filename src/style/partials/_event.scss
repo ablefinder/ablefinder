@@ -728,10 +728,8 @@
     url("../../images/updated_images/landing_img.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   .landingContent {
+    padding-top: 10%;
     h1 {
       font-weight: bold;
       font-size: 56px;
@@ -740,15 +738,21 @@
     }
 
     .vidContainer {
-      max-width: 800px;
-      max-height: 500px;
+      width: 800px;
+      height: 500px;
       margin: auto;
     }
   }
 
   @media (min-width: $layout-breakpoint) {
-    .landingContent{
+    .landingContent {
       width: 100%;
+    }
+  }
+
+  @media (max-width: $layout-breakpoint) {
+    .vidContainer {
+      width: 100% !important;
     }
   }
 }

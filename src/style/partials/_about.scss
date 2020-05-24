@@ -31,10 +31,10 @@ body {
 }
 .mission-promo {
   background-image: url("../images/updated_images/about_img.svg");
-  @include image-2x("../images/about_title@2x.jpg", cover, cover);
+  @include image-2x("../images/updated_images/about_img.svg", cover, cover);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 41%;
+  // background-position: center;
   height: 300px;
   text-align: center;
   color: #fff;
@@ -50,6 +50,24 @@ body {
     background-image: url("../images/ourteam_header.jpg");
     @include image-2x("../images/ourteam_header@2x.jpg", cover, cover);
   }
+  @media screen and (max-width: $mobile-breakpoint) {
+    height: 120px;
+    margin-top: 0;
+    font-size: 22px;
+    padding: 0 10px;
+    h1 {
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (min-width: 1400px) {
+    height: 450px;
+  }
+
+  @media screen and (min-width: 2000px) {
+    height: 600px;
+  }
+
   @media screen and (max-width: $mobile-breakpoint) {
     height: 120px;
     margin-top: 0;
@@ -661,6 +679,20 @@ body {
   @media screen and (max-width: $layout-breakpoint) {
     p {
       width: 100% !important;
+    }
+  }
+
+  @media screen and (max-width:400px) {
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  @media screen and (max-width:325px) {
+    img {
+      width: 260px;
+      height: 260px;
     }
   }
 }
