@@ -1,8 +1,7 @@
-
 .img-block {
   background-size: cover;
   background-color: $img-block-color;
-  background-position: center center;
+  background-position: top;
   background-repeat: no-repeat;
   @media screen and (max-width: $mobile-breakpoint) {
     height: 320px;
@@ -17,7 +16,7 @@
   bottom: 24px;
   left: 50%;
   margin-left: -27px;
-  background-image: url('../images/scroll_down_ico.svg');
+  background-image: url("../images/scroll_down_ico.svg");
   background-size: 56px 56px;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -31,22 +30,29 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  height: 788px;
+  justify-content: space-between;
   align-content: flex-start;
   align-items: stretch;
   background-color: $white-two;
   @media screen and (max-width: $mobile-breakpoint) {
     display: block;
   }
-  .img-block{
-    background-image: url('../images/iam_bg_320.jpg');
+  .img-block {
+    width: 800px;
+    height: 788px;
+    background-image: url("../images/updated_images/community_img.svg");
     @media screen and (min-width: $mobile-breakpoint) {
-      background-image: url('../images/iam_bg_768.jpg');
-    }
-    @media screen and (min-width: $layout-breakpoint) {
-      background-image: url('../images/iam_bg_1200.jpg');
+      background-image: url("../images/updated_images/community_img.svg");
     }
 
+    @media screen and (max-width: $mobile-breakpoint) {
+      width: 100%;
+      height: auto;
+    }
+    @media screen and (min-width: $layout-breakpoint) {
+      background-image: url("../images/updated_images/community_img.svg");
+    }
   }
 
   > div {
@@ -102,20 +108,27 @@
     }
   }
   .top-text {
-    padding: 15px 30px 30px;
-      .round-border-btn {
-        margin-bottom:30px;
-      }
+    padding-top: 10%;
+    padding-left: 20%;
+    padding-right: 20px;
+    .round-border-btn {
+      margin-bottom: 30px;
+    }
     @media screen and (max-width: $mobile-breakpoint) {
       .round-border-btn {
-        margin:15px 0 0;
+        margin: 15px 0 0;
       }
       padding: 54px 15px 30px;
     }
+
+    @media screen and (min-width: $mobile-breakpoint) {
+      padding-top: 5%;
+      padding-left: 5%;
+    }
   }
 }
-.sharethis-inline-share-buttons{
-  margin-bottom:50px;
+.sharethis-inline-share-buttons {
+  margin-bottom: 50px;
 }
 .round-border-btn {
   font-size: 16px;
@@ -137,7 +150,7 @@
   border: solid 1px $link-color;
   position: absolute;
   @include centerer($horizontal: true, $vertical: false);
-  transition: all .3s;
+  transition: all 0.3s;
   white-space: nowrap;
   bottom: 40px;
   @media screen and (min-width: $layout-breakpoint) {
@@ -158,13 +171,12 @@
     letter-spacing: 0.2px;
     margin: 30px 0 22px;
   }
-
 }
 
 .stories-wrapper {
   width: 944px;
   margin: 0 auto;
-  max-width:100%;
+  max-width: 100%;
   @media screen and (max-width: $layout-breakpoint) {
     width: 768px;
     padding: 0 24px;
@@ -186,7 +198,7 @@
     display: block;
   }
 }
-.hide{
+.hide {
   display: none;
 }
 
@@ -194,11 +206,11 @@
   border-radius: 4px;
   overflow: hidden;
   position: relative;
-  transition: all .3s;
-  img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+  transition: all 0.3s;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   &:hover {
     .round-blue-btn {
@@ -236,7 +248,7 @@
     margin-right: 30px;
     @media screen and (max-width: $layout-breakpoint) {
       width: 345px;
-      height: 345px
+      height: 345px;
     }
     @media screen and (max-width: $mobile-breakpoint) {
       height: 290px;
@@ -261,7 +273,7 @@
 .donate-block {
   @include centerer($horizontal: true, $vertical: true);
   text-align: center;
-  width:80%;
+  width: 80%;
   @media screen and (max-width: $mobile-breakpoint) {
     background-size: 110px 87px;
     // padding: 100px 0 0;
@@ -291,7 +303,6 @@
       width: 220px;
       height: 260px;
     }
-
   }
   .storie-short {
     width: calc(100% - 295px);
@@ -340,7 +351,7 @@
   letter-spacing: 0.2px;
   font-family: $font-family-bold;
   color: #0284ff;
-  background-image: url('../images/link_arrow_ico.svg');
+  background-image: url("../images/link_arrow_ico.svg");
   background-size: 6px 12px;
   background-repeat: no-repeat;
   background-position: 100% 10px;
@@ -361,6 +372,14 @@
     line-height: 34px;
     background-color: transparent;
   }
-
 }
 
+#emailSection {
+  background-color: #f7f7f7;
+  padding: 100px 20px;
+  p {
+    font-size: 32px;
+    font-weight: normal;
+    color: black;
+  }
+}
