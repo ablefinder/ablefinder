@@ -1,73 +1,170 @@
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 
 html {
-  height: 100%
+  height: 100%;
 }
 
 .clearfix:after {
   content: "";
   display: table;
-  clear: both
+  clear: both;
 }
 
 * html.clearfix {
-  zoom: 1
+  zoom: 1;
 }
 
-input:invalid, input:-moz-ui-invalid {
+input:invalid,
+input:-moz-ui-invalid {
   outline: none;
   box-shadow: none;
   -moz-box-shadow: none;
-  -webkit-box-shadow: none
+  -webkit-box-shadow: none;
 }
 
 *:first-child + html.clearfix {
-  zoom: 1
+  zoom: 1;
 }
 
 body {
-  line-height: 1
+  line-height: 1;
 }
 
-ol, ul, nav {
+ol,
+ul,
+nav {
   list-style: none;
-  li{
+  li {
     list-style: none;
   }
 }
 
-blockquote, q {
-  quotes: none
+blockquote,
+q {
+  quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-  content: '';
-  content: none
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0
+  border-spacing: 0;
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none
+  text-decoration: none;
 }
 
 :focus {
-  outline: 0
+  outline: 0;
 }
 
 a:focus {
@@ -75,116 +172,134 @@ a:focus {
   outline-offset: 0;
 }
 
-audio, canvas, video {
+audio,
+canvas,
+video {
   display: inline-block;
   *display: inline;
-  *zoom: 1
+  *zoom: 1;
 }
 
 audio:not([controls]) {
   display: none;
-  height: 0
+  height: 0;
 }
 
 [hidden] {
-  display: none
+  display: none;
 }
 
 html {
   font-size: 100%;
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%
+  -ms-text-size-adjust: 100%;
 }
 
-html, button, input, select, textarea {
-  font-family: sans-serif
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
 }
 
-nav ul, nav ol {
+nav ul,
+nav ol {
   list-style: none;
-  list-style-image: none
+  list-style-image: none;
 }
 
 img {
   border: 0;
   /*display: block;*/
-  -ms-interpolation-mode: bicubic
+  -ms-interpolation-mode: bicubic;
 }
 
 svg:not(:root) {
-  overflow: hidden
+  overflow: hidden;
 }
 
 figure {
-  margin: 0
+  margin: 0;
 }
 
 form {
-  margin: 0
+  margin: 0;
 }
 
 legend {
   border: 0;
   padding: 0;
   white-space: normal;
-  *margin-left: -7px
+  *margin-left: -7px;
 }
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font-size: 100%;
   margin: 0;
   vertical-align: baseline;
-  *vertical-align: middle
+  *vertical-align: middle;
 }
 
-button, input {
-  line-height: normal
+button,
+input {
+  line-height: normal;
 }
 
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
   -webkit-appearance: button;
   cursor: pointer;
-  *overflow: visible
+  *overflow: visible;
 }
 
-button[disabled], input[disabled] {
-  cursor: default
+button[disabled],
+input[disabled] {
+  cursor: default;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   box-sizing: border-box;
   padding: 0;
   *height: 13px;
-  *width: 13px
+  *width: 13px;
 }
 
 input[type="search"] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
-  box-sizing: content-box
+  box-sizing: content-box;
 }
 
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
 }
 
-button::-moz-focus-inner, input::-moz-focus-inner {
+button::-moz-focus-inner,
+input::-moz-focus-inner {
   border: 0;
-  padding: 0
+  padding: 0;
 }
 
 textarea {
   overflow: auto;
   vertical-align: top;
-  resize: none
+  resize: none;
 }
 
 * {
   -webkit-text-size-adjust: none;
   outline: none;
   -webkit-touch-callout: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 @media print {
@@ -193,38 +308,46 @@ textarea {
     box-shadow: none !important;
     text-shadow: none !important;
     filter: none !important;
-    -ms-filter: none !important
+    -ms-filter: none !important;
   }
-  a, a:visited {
-    text-decoration: underline
+  a,
+  a:visited {
+    text-decoration: underline;
   }
   a[href]:after {
-    content: " (" attr(href) ")"
+    content: " (" attr(href) ")";
   }
   abbr[title]:after {
-    content: " (" attr(title) ")"
+    content: " (" attr(title) ")";
   }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
-    content: ""
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
   }
-  pre, blockquote {
+  pre,
+  blockquote {
     border: 1px solidundefined;
-    page-break-inside: avoid
+    page-break-inside: avoid;
   }
   thead {
-    display: table-header-group
+    display: table-header-group;
   }
-  tr, img {
-    page-break-inside: avoid
+  tr,
+  img {
+    page-break-inside: avoid;
   }
   @page {
-    margin: 0.5cm
+    margin: 0.5cm;
   }
-  p, h2, h3 {
+  p,
+  h2,
+  h3 {
     orphans: 3;
-    widows: 3
+    widows: 3;
   }
-  h2, h3 {
+  h2,
+  h3 {
     page-break-after: avoid;
   }
 }

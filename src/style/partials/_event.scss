@@ -723,13 +723,14 @@
 }
 
 #eventLandingSection {
-  min-height: 100vh;
+  height: 600px;
   background-image: linear-gradient(#147ffac2, #147ffac2),
     url("../../images/updated_images/landing_img.svg");
   background-size: cover;
   background-repeat: no-repeat;
   .landingContent {
-    padding-top: 10%;
+    padding-top: 2%;
+    height: 100%;
     h1 {
       font-weight: bold;
       font-size: 56px;
@@ -739,7 +740,7 @@
 
     .vidContainer {
       width: 800px;
-      height: 500px;
+      height: 300px;
       margin: auto;
     }
   }
@@ -753,6 +754,46 @@
   @media (max-width: $layout-breakpoint) {
     .vidContainer {
       width: 100% !important;
+      height: 200px;
+    }
+    height: 800px;
+  }
+
+
+  @media screen and (max-width: 700px) {
+    height: 600px;
+  }
+
+  @media screen and (min-width: 1360px) {
+    height: 600px;
+    background-position: 0% 10%;
+  }
+
+  @media screen and (min-width: 1600px) {
+    background-position: 0% 15%;
+    height: 700px;
+  }
+
+  @media screen and (min-width: 1900px) {
+    background-position: 0% 15%;
+    height: 800px;
+  }
+
+  @media screen and (max-width: 375px) {
+    background-position: center;
+    background-size: 200%;
+    height: 600px;
+  }
+  @media screen and (max-width: 500px){
+    background-image: linear-gradient(#147ffac2, #147ffac2),
+    url("../../images/updated_images/landing_img@320.jpg");
+    height: 400px;
+
+    h1{
+      padding-top: 20px;
+      font-size: 38px !important;
     }
   }
 }
+
+
