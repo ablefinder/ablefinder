@@ -780,6 +780,7 @@ h3 {
     margin: 100px 0px;
   }
   .inner_wrap {
+    width: 100vw;
     p {
       margin-bottom: 10px;
     }
@@ -787,6 +788,12 @@ h3 {
     .dates {
       :nth-child(1) {
         margin-bottom: 0px !important;
+      }
+    }
+
+    @media screen and (max-width: $layout-breakpoint) {
+      p {
+        width: 90%;
       }
     }
   }
@@ -807,7 +814,7 @@ h3 {
     h1 {
       font-size: 16px;
     }
-    h3{
+    h3 {
       font-size: 14px;
     }
   }
