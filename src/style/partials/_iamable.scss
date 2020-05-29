@@ -49,13 +49,14 @@
       background-image: url("../images/updated_images/community_img@300.svg");
     }
 
-    @media screen and (max-width: 400px) {
-      background-image: url("../images/updated_images/landing_img@320.jpg");
-    }
-
     @media screen and (min-width: 1400px) {
       width: 800px;
       height: 650px;
+    }
+
+    @media screen and (min-width: 1700px) {
+      width: 900px;
+      height: 750px;
     }
 
     @media screen and (max-width: $mobile-breakpoint) {
@@ -64,6 +65,10 @@
     }
     @media screen and (min-width: $layout-breakpoint) {
       background-image: url("../images/updated_images/community_img.svg");
+    }
+    @media screen and (max-width: 400px) {
+      background-image: url("../images/updated_images/landing_img@320.jpg");
+      min-height: 450px;
     }
   }
 
@@ -132,11 +137,6 @@
       }
       padding: 54px 15px 30px;
     }
-
-    // @media screen and (max-width: $mobile-breakpoint) {
-    //   padding-top: 5%;
-    //   padding-left: 5%;
-    // }
   }
 }
 .iamable-page{
@@ -399,5 +399,12 @@
     font-size: 32px;
     font-weight: normal;
     color: black;
+  }
+
+  @media screen and (max-width: 700px){
+    padding: 50px 10px;
+    p{
+      font-size: 20px;
+    }
   }
 }
