@@ -294,7 +294,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0;
-  height: 600px;
+  height: 790px;
   @media screen and (max-width: $layout-breakpoint) {
     // height: auto;
     padding: 80px 0 35px;
@@ -304,20 +304,45 @@ h3 {
     height: auto;
   }
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 1200px) {
+    height: 700px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    height: 600px;
+  }
+
+  @media screen and (max-width: 769px) {
+    height: 490px;
+  }
+
+  @media screen and (max-width: 425px) {
     background-image: url("../images/updated_images/landing_img@320.jpg");
+    height: 520px;
   }
 
-  @media screen and (min-width: 1500px) {
-    height: 750px;
+  @media screen and (max-width: 400px) {
+    height: 490px;
   }
 
-  @media screen and (min-width: 2000px) {
+  @media screen and (max-width: 374px) {
+    height: 400px;
+  }
+
+  @media screen and (min-width: 1400px) {
     height: 850px;
   }
 
+  @media screen and (min-width: 1500px) {
+    height: 1050px;
+  }
+
+  @media screen and (min-width: 2000px) {
+    height: 1200px;
+  }
+
   @media screen and (min-width: 2500px) {
-    height: 1100px;
+    height: 1600px;
   }
 
   p {
@@ -342,8 +367,17 @@ h3 {
     background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 20px;
+    margin-bottom: 15%;
     @media (min-width: 640px) {
       padding: 35px;
+    }
+
+    @media screen and (min-width: 1500px) {
+      margin-bottom: 50%;
+    }
+
+    @media screen and (min-width: 2000px) {
+      margin-bottom: 80%;
     }
   }
   .textBlock.leftBlock {
