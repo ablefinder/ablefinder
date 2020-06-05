@@ -147,12 +147,12 @@ h3 {
   text-indent: -9999px;
   width: 167px;
   height: 54px;
-  background-image: url("../images/blueButton.svg");
+  background-image: url('../images/blueButton.svg');
   background-repeat: no-repeat;
   background-size: 167px 54px;
   background-position: 0 0;
   @media screen and (max-width: $layout-breakpoint) {
-    background-image: url("../images/blueButton_m.svg");
+    background-image: url('../images/blueButton_m.svg');
     width: 129px;
     height: 45px;
     background-size: 129px 45px;
@@ -233,7 +233,7 @@ h3 {
   color: $blue-button-color;
   display: inline-block;
   padding: 0 0 0 42px;
-  background-image: url("../images/message_us.svg");
+  background-image: url('../images/message_us.svg');
   background-repeat: no-repeat;
   background-size: 26px 26px;
   background-position: 0 50%;
@@ -285,12 +285,8 @@ h3 {
   }
 }
 .promoBlock {
-  background-image: url("../images/updated_images/landing_img.jpg");
-  @include image-2x(
-    "../images/updated_images/landing_img@x2.jpg",
-    cover,
-    cover
-  );
+  background-image: url('../images/updated_images/landing_img.jpg');
+  @include image-2x('../images/updated_images/landing_img@x2.jpg', cover, cover);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0;
@@ -317,7 +313,7 @@ h3 {
   }
 
   @media screen and (max-width: 425px) {
-    background-image: url("../images/updated_images/landing_img@320.jpg");
+    background-image: url('../images/updated_images/landing_img@320.jpg');
     height: 520px;
   }
 
@@ -334,11 +330,39 @@ h3 {
   }
 
   @media screen and (min-width: 1500px) {
+    height: 900px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    height: 980px;
+  }
+
+  @media screen and (min-width: 1700px) {
     height: 1050px;
+  }
+
+  @media screen and (min-width: 1800px) {
+    height: 1100px;
+  }
+
+  @media screen and (min-width: 1826px) {
+    height: 1100px;
   }
 
   @media screen and (min-width: 2000px) {
     height: 1200px;
+  }
+
+  @media screen and (min-width: 2100px) {
+    height: 1250px;
+  }
+
+  // @media screen and (min-width: 2200px) {
+  //   height: 1350px;
+  // }
+
+  @media screen and (min-width: 2300px) {
+    height: 1400px;
   }
 
   @media screen and (min-width: 2500px) {
@@ -397,7 +421,7 @@ h3 {
 }
 
 .getBlock {
-  background-image: url("../images/last_img.jpg");
+  background-image: url('../images/last_img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
@@ -405,7 +429,7 @@ h3 {
   padding: 0 20px;
   text-align: center;
   @media screen and (max-width: $mobile-breakpoint) {
-    background-image: url("../images/last_img@mobile.jpg");
+    background-image: url('../images/last_img@mobile.jpg');
     background-position: 50% 50%;
     height: 350px;
   }
@@ -509,17 +533,17 @@ h3 {
     top: 0;
     right: 0;
     display: block;
-    content: " ";
+    content: ' ';
     width: 6px;
     height: 100%;
-    background-image: url("../images/link_arrow_ico.svg");
+    background-image: url('../images/link_arrow_ico.svg');
     background-size: 6px 12px;
     background-repeat: no-repeat;
     background-position: 0 50%;
   }
   &:hover {
     &:before {
-      background-image: url("../images/link_arrow_ico_hover.svg");
+      background-image: url('../images/link_arrow_ico_hover.svg');
     }
   }
 }
@@ -758,7 +782,7 @@ h3 {
     span {
       font-size: 14px;
       position: absolute;
-      background-color: rgb(69, 136, 236);
+      background-color: #0084ff;
       color: #fff;
       padding: 5px 10px;
       border-radius: 200px;
