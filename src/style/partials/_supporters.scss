@@ -96,7 +96,7 @@
       margin-top: 20px;
     }
     a {
-      margin-top: 20px;
+      margin-top: 40px;
       width: 100%;
       text-align: center;
       padding: 15px 0px;
@@ -123,6 +123,7 @@
   @media screen and (max-width: 668px) {
     img{
       margin-top: 20px !important;
+      margin-bottom: 30px !important;
     }
 
     .img1 {
@@ -133,7 +134,4 @@
       margin-left: 15px !important;
     }
   }
-}
-
-@media screen and (max-width: 668px) {
 }
