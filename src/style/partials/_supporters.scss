@@ -1,0 +1,139 @@
+.supporters-page {
+  color: #000;
+  h1 {
+    font-weight: bolder !important;
+    font-size: 48px !important;
+  }
+  hr {
+    margin: 0px;
+  }
+  @media screen and (max-width: 668px) {
+    h1 {
+      font-size: 42px !important;
+    }
+  }
+}
+
+#supportersSection {
+  background-color: #f7f7f7;
+  padding: 100px 20px;
+  color: #000 !important;
+
+  h1 {
+    margin-bottom: 50px;
+  }
+
+  h5 {
+    font-weight: bold !important;
+    font-size: 32px !important;
+    margin-bottom: 10px;
+    letter-spacing: 1.2px;
+  }
+
+  .details {
+    max-width: 345px;
+  }
+
+  img {
+    width: 400px;
+    height: auto;
+  }
+
+  @media screen and (max-width: 992px) {
+    padding: 20px 20px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    .details {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      margin-top: 10px;
+      font-size: 28px !important;
+    }
+  }
+}
+
+#partnerSection {
+  padding: 50px 0px 100px;
+  h1 {
+    margin-bottom: 20px;
+  }
+  img, .imgContainer {
+    margin: 50px 50px;
+  }
+
+  .imgContainer{
+    width: 140px;
+    height: 100px;
+    background-color: #128CFF;
+    border-radius: 10px;
+    opacity: 0.5;
+  }
+
+  .imgContainer2{
+    opacity: 0.2;
+  }
+
+  a {
+    padding: 15px 100px;
+  }
+  @media screen and (max-width: 668px) {
+    padding: 30px 10px;
+    h1 {
+      margin-bottom: 0px;
+    }
+    img, .imgContainer{
+      margin: 0px;
+      margin-top: 20px;
+    }
+    a {
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+      padding: 15px 0px;
+    }
+  }
+}
+
+.communityChampion {
+  .row {
+    margin-right: 20px;
+  }
+  img {
+    margin: 0px !important;
+    margin-top: 50px !important;
+  }
+
+  .img1 {
+    margin-right: 50px !important;
+  }
+
+  .img2 {
+    margin-left: 50px !important;
+  }
+  @media screen and (max-width: 668px) {
+    img{
+      margin-top: 20px !important;
+    }
+
+    .img1 {
+      margin-right: 15px !important;
+    }
+  
+    .img2 {
+      margin-left: 15px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 668px) {
+}
