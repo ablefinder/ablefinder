@@ -823,7 +823,7 @@ h3 {
   }
 }
 
-.terms_page,  .privacy-page {
+.terms_page, .privacy-page {
   h1,
   h3 {
     color: #fff;
@@ -881,14 +881,15 @@ h3 {
 .privacy-page{
   overflow: hidden;
   p{
-    text-align: justify;
+    margin-bottom: 10px !important;
+    text-align: justify !important;
   }
   ul{
-    list-style-type: initial;
-    margin-left: 50px;
-    padding-right: 20px;
+    list-style-type: initial !important;
+    margin-left: 50px !important;
+    padding-right: 20px !important;
     li{
-      list-style: initial;
+      list-style: initial !important;
     }
   }
 }
