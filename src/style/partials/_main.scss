@@ -823,7 +823,7 @@ h3 {
   }
 }
 
-.terms_page {
+.terms_page,  .privacy-page {
   h1,
   h3 {
     color: #fff;
@@ -874,6 +874,21 @@ h3 {
     }
     h3 {
       font-size: 14px;
+    }
+  }
+}
+
+.privacy-page{
+  overflow: hidden;
+  p{
+    text-align: justify;
+  }
+  ul{
+    list-style-type: initial;
+    margin-left: 50px;
+    padding-right: 20px;
+    li{
+      list-style: initial;
     }
   }
 }
