@@ -35,7 +35,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   // background-position: center;
-  height: 330px;
+  height: 430px;
   text-align: center;
   color: #fff;
   font-size: 48px;
@@ -60,17 +60,85 @@ body {
     }
   }
 
+  @media screen and (min-width: 1000px) {
+    height: 270px !important;
+  }
+
+  @media screen and (min-width: 1100px) {
+    height: 280px !important;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 300px !important;
+  }
+
+  @media screen and (min-width: 1300px) {
+    height: 320px !important;
+  }
+
+  @media screen and (min-width: 1350px) {
+    height: 340px !important;
+  }
+
   @media screen and (min-width: 1400px) {
-    height: 450px;
+    height: 350px !important; 
+  }
+
+  @media screen and (min-width: 1500px) {
+    height: 380px !important; 
+  }
+
+  @media screen and (min-width: 1600px) {
+    height: 410px !important; 
+  }
+
+  @media screen and (min-width: 1720px) {
+    height: 440px !important; 
+  }
+
+  @media screen and (min-width: 1800px) {
+    height: 460px !important; 
+  }
+
+  @media screen and (min-width: 1850px) {
+    height: 470px !important; 
+  }
+
+  @media screen and (min-width: 1900px) {
+    height: 480px !important; 
+  }
+
+  @media screen and (min-width: 1950px) {
+    height: 500px !important; 
   }
 
   @media screen and (min-width: 2000px) {
-    height: 600px;
+    height: 510px !important; 
   }
 
-  @media screen and (min-width: 2500px) {
-    height: 1000px;
+  @media screen and (min-width: 2050px) {
+    height: 530px !important; 
   }
+
+  @media screen and (min-width: 2200px) {
+    height: 560px !important; 
+  }
+
+  @media screen and (min-width: 2400px) {
+    height: 590px !important; 
+  }
+
+  @media screen and (min-width: 2600px) {
+    height: 620px !important; 
+  }
+
+  @media screen and (min-width: 2700px) {
+    height: 800px !important; 
+  }
+
+  // @media screen and (min-width: 2500px) {
+  //   height: 1000px;
+  // }
 
   @media screen and (max-width: $mobile-breakpoint) {
     height: 120px;
