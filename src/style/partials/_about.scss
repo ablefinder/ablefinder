@@ -256,6 +256,7 @@ body {
     }
   }
   @media screen and (max-width: $mobile-breakpoint) {
+    padding-bottom: 0px;
     .first {
       margin-bottom: 20px;
     }
@@ -768,6 +769,7 @@ body {
 
   @media screen and (max-width: 500px){
     padding-top: 30px;
+    margin-top: 20px;
   }
 
   @media screen and (max-width: $layout-breakpoint) {
