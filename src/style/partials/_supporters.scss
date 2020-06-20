@@ -67,20 +67,17 @@
   h1 {
     margin-bottom: 20px;
   }
-  img, .imgContainer {
+  img{
     margin: 50px 50px;
   }
 
-  .imgContainer{
-    width: 140px;
-    height: 100px;
-    background-color: #128CFF;
-    border-radius: 10px;
-    opacity: 0.5;
+  .row{
+    max-width: 1000px;
   }
 
-  .imgContainer2{
-    opacity: 0.2;
+  .img-no-margin{
+    margin: 0px;
+    margin-left: 50px;
   }
 
   a {
@@ -91,7 +88,7 @@
     h1 {
       margin-bottom: 0px;
     }
-    img, .imgContainer{
+    img{
       margin: 0px;
       margin-top: 20px;
     }
@@ -101,6 +98,14 @@
       text-align: center;
       padding: 15px 0px;
     }
+  }
+}
+.probono{
+  @media screen and (max-width: 768px) {
+      img{
+        margin: 0px !important;
+        margin-top: 20px !important;
+      }
   }
 }
 
