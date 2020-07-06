@@ -67,15 +67,15 @@
   h1 {
     margin-bottom: 20px;
   }
-  img{
+  img {
     margin: 50px 50px;
   }
 
-  .row{
+  .row {
     max-width: 1000px;
   }
 
-  .img-no-margin{
+  .img-no-margin {
     margin: 0px;
     margin-left: 50px;
   }
@@ -83,12 +83,17 @@
   a {
     padding: 15px 100px;
   }
+
+  .row a {
+    padding: 0px;
+  }
+
   @media screen and (max-width: 668px) {
     padding: 30px 10px;
     h1 {
       margin-bottom: 0px;
     }
-    img{
+    img {
       margin: 0px;
       margin-top: 20px;
     }
@@ -98,14 +103,19 @@
       text-align: center;
       padding: 15px 0px;
     }
+
+    .row a {
+      padding: 0px;
+      margin: 0px;
+    }
   }
 }
-.probono{
+.probono {
   @media screen and (max-width: 768px) {
-      img{
-        margin: 0px !important;
-        margin-top: 20px !important;
-      }
+    img {
+      margin: 0px !important;
+      margin-top: 20px !important;
+    }
   }
 }
 
@@ -126,7 +136,7 @@
     margin-left: 50px !important;
   }
   @media screen and (max-width: 668px) {
-    img{
+    img {
       margin-top: 20px !important;
       margin-bottom: 30px !important;
     }
@@ -134,7 +144,7 @@
     .img1 {
       margin-right: 15px !important;
     }
-  
+
     .img2 {
       margin-left: 15px !important;
     }
