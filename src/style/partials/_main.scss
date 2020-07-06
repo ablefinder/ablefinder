@@ -159,7 +159,7 @@ h3 {
   }
 }
 .textBlock {
-  width: 374px;
+  width: 450px;
   @media screen and (max-width: $layout-breakpoint) {
     width: 100%;
   }
@@ -190,7 +190,7 @@ h3 {
     }
   }
   &.rightBlock {
-    margin-left: 211px;
+    margin-left: 170px;
     @media screen and (max-width: $layout-breakpoint) {
       margin: 0;
     }
