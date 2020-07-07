@@ -403,6 +403,22 @@ h3 {
     @media screen and (min-width: 2000px) {
       // margin-bottom: 80%;
     }
+
+    @media screen and (max-width: 1200px) {
+      .afford_with_text {
+        width: 76px;
+        height: auto;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .afford_with_text {
+        margin: 0px !important;
+        margin: 25px auto 0px auto !important;
+        width: 96px;
+        height: auto;
+      }
+    }
   }
   .textBlock.leftBlock {
     margin: 0px;
@@ -823,7 +839,8 @@ h3 {
   }
 }
 
-.terms_page, .privacy-page {
+.terms_page,
+.privacy-page {
   h1,
   h3 {
     color: #fff;
@@ -878,17 +895,17 @@ h3 {
   }
 }
 
-.privacy-page{
+.privacy-page {
   overflow: hidden;
-  p{
+  p {
     margin-bottom: 10px !important;
     text-align: justify !important;
   }
-  ul{
+  ul {
     list-style-type: initial !important;
     margin-left: 50px !important;
     padding-right: 20px !important;
-    li{
+    li {
       list-style: initial !important;
     }
   }

@@ -103,6 +103,7 @@ footer{
     max-width:400px;
     margin: 0 auto 30px;
   }
+
   ul{
     li{
       display: block;
@@ -118,6 +119,18 @@ footer{
       }
     }
   }
+}
+.powered{
+  @media screen and (max-width: 969px){
+    strong{
+      margin-top: 20px; 
+      text-align: center !important;
+     }
+    li{
+    display: flex !important;
+    justify-content: center;
+    }
+  } 
 }
 // .contact-left{
 //   flex: 1;
