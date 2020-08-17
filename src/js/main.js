@@ -355,3 +355,15 @@ $(document).ready(function() {
       });
   })(jQuery);
 }); 
+
+// get website visitor's location
+$.getJSON('https://ipapi.co/json/', function (data) {
+  console.log(data);
+  var country = data.country_name;
+  var headerLogo = $('.afford_with_text');
+  var footerLogo = $('.powered')
+  if(country !== 'Australia'){
+    headerLogo.css('display', 'none');
+    footerLogo.css('display', 'none');
+  }
+});
