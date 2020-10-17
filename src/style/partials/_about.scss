@@ -24,14 +24,15 @@ body {
   }
 }
 #ourMission {
-  padding-top: 50px;
-  @media screen and (max-width: $layout-breakpoint) {
-    padding-top: 40px;
+  position: relative;
+
+  .navbar {
+    position: absolute;
   }
 }
 .mission-promo {
-  background-image: url("../images/updated_images/about_img.jpg");
-  @include image-2x("../images/updated_images/about_img@x2.jpg", cover, cover);
+  background-image: url("../images/about_bg.png");
+  @include image-2x("../images/about_bg2x.png", cover, cover);
   background-repeat: no-repeat;
   background-size: cover;
   // background-position: center;
@@ -60,85 +61,133 @@ body {
     }
   }
 
-  @media screen and (min-width: 1000px) {
-    height: 270px !important;
+  @media screen and (min-width: 300px) {
+    height: 140px !important;
   }
 
-  @media screen and (min-width: 1100px) {
+  @media screen and (min-width: 350px) {
+    height: 170px !important;
+  }
+
+  @media screen and (min-width: 450px) {
+    height: 200px !important;
+  }
+
+  @media screen and (min-width: 500px) {
+    height: 230px !important;
+  }
+
+  @media screen and (min-width: 550px) {
+    height: 250px !important;
+  }
+
+  @media screen and (min-width: 600px) {
     height: 280px !important;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 650px) {
     height: 300px !important;
   }
 
+  @media screen and (min-width: 700px) {
+    height: 330px !important;
+  }
+
+  @media screen and (min-width: 750px) {
+    height: 350px !important;
+  }
+
+  @media screen and (min-width: 800px) {
+    height: 380px !important;
+  }
+
+  @media screen and (min-width: 850px) {
+    height: 410px !important;
+  }
+
+  @media screen and (min-width: 900px) {
+    height: 430px !important;
+  }
+
+  @media screen and (min-width: 950px) {
+    height: 450px !important;
+  }
+
+  @media screen and (min-width: 1000px) {
+    height: 480px !important;
+  }
+
+  @media screen and (min-width: 1050px) {
+    height: 500px !important;
+  }
+
+  @media screen and (min-width: 1100px) {
+    height: 530px !important;
+  }
+
+  @media screen and (min-width: 1150px) {
+    height: 550px !important;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 570px !important;
+  }
+
   @media screen and (min-width: 1300px) {
-    height: 320px !important;
+    height: 630px !important;
   }
 
   @media screen and (min-width: 1350px) {
-    height: 340px !important;
+    height: 630px !important;
   }
 
   @media screen and (min-width: 1400px) {
-    height: 350px !important; 
+    height: 650px !important;
   }
 
   @media screen and (min-width: 1500px) {
-    height: 380px !important; 
+    height: 690px !important;
+  }
+
+  @media screen and (min-width: 1550px) {
+    height: 720px !important;
   }
 
   @media screen and (min-width: 1600px) {
-    height: 410px !important; 
+    height: 750px !important;
   }
 
-  @media screen and (min-width: 1720px) {
-    height: 440px !important; 
+  @media screen and (min-width: 1700px) {
+    height: 800px !important;
   }
 
   @media screen and (min-width: 1800px) {
-    height: 460px !important; 
-  }
-
-  @media screen and (min-width: 1850px) {
-    height: 470px !important; 
-  }
-
-  @media screen and (min-width: 1900px) {
-    height: 480px !important; 
+    height: 850px !important;
   }
 
   @media screen and (min-width: 1950px) {
-    height: 500px !important; 
+    height: 900px !important;
   }
 
   @media screen and (min-width: 2000px) {
-    height: 510px !important; 
+    height: 950px !important;
   }
 
-  @media screen and (min-width: 2050px) {
-    height: 530px !important; 
+  @media screen and (min-width: 2100px) {
+    height: 1000px !important;
+  }
+
+  @media screen and (min-width: 2150px) {
+    height: 1050px !important;
   }
 
   @media screen and (min-width: 2200px) {
-    height: 560px !important; 
+    height: 1080px !important;
   }
 
-  @media screen and (min-width: 2400px) {
-    height: 590px !important; 
+  @media screen and (min-width: 2500px) {
+    height: 1200px !important;
   }
-
-  @media screen and (min-width: 2600px) {
-    height: 620px !important; 
-  }
-
-  @media screen and (min-width: 2700px) {
-    height: 800px !important; 
-  }
-
-  // @media screen and (min-width: 2500px) {
-  //   height: 1000px;
-  // }
 
   @media screen and (max-width: $mobile-breakpoint) {
     height: 120px;
@@ -155,7 +204,8 @@ body {
   }
 }
 
-.terms_page, .privacy-page{
+.terms_page,
+.privacy-page {
   .mission-promo {
     background-image: linear-gradient(#147ffac2, #147ffac2),
       url("../images/updated_images/about_img.jpg");
@@ -732,7 +782,7 @@ body {
 
   .vidContainer {
     max-height: 350px;
-    max-width: 700px;
+    max-width: 750px;
     margin: 50px 0px;
     margin-bottom: 100px;
   }
@@ -754,6 +804,8 @@ body {
   padding-bottom: 100px;
 
   img {
+    width: 240px;
+    height: auto;
     margin-bottom: 40px;
   }
 
@@ -766,10 +818,10 @@ body {
     font-size: 24px;
   }
 
-  @media screen and (max-width: 500px){
+  @media screen and (max-width: 500px) {
     padding-top: 0px;
     margin-top: 20px;
-    img{
+    img {
       margin-bottom: 30px;
       width: 100%;
     }
@@ -780,5 +832,17 @@ body {
       width: 100% !important;
       font-size: 20px;
     }
+  }
+}
+
+.kindship_txt {
+  h2 {
+    margin-bottom: 0px !important;
+    font-size: 44px !important;
+  }
+
+  .connected_txt {
+    font-family: calibri;
+    font-weight: normal !important;
   }
 }

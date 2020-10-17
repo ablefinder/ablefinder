@@ -1,0 +1,28 @@
+.navbar {
+  width: 100%;
+  padding: 20px 30px;
+
+  img {
+    width: 140px;
+    height: auto;
+  }
+
+  a {
+    color: #fff;
+    font-size: 22px;
+  }
+
+  .ks-links {
+    a {
+      cursor: pointer;
+      margin-right: 50px;
+    }
+  }
+
+  .gplay {
+    img {
+      height: 46px;
+      width: auto;
+    }
+  }
+}
