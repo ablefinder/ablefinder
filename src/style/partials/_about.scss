@@ -787,11 +787,28 @@ body {
     margin-bottom: 100px;
   }
 
+  @media screen and (max-width: 700px) {
+    .vidContainer {
+      max-height: 300px;
+    }
+  }
+
   @media screen and (max-width: 500px) {
+    margin-bottom: 0px;
     h1 {
       text-align: left !important;
       margin-left: 20px;
       font-size: 38px;
+    }
+
+    .vidContainer {
+      max-height: 200px;
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .vidContainer {
+      max-height: 130px;
     }
   }
 }
@@ -823,6 +840,8 @@ body {
     margin-top: 20px;
     img {
       margin-bottom: 30px;
+      padding: 0px 60px;
+      padding-top: 30px;
       width: 100%;
     }
   }
@@ -845,4 +864,17 @@ body {
     font-family: calibri;
     font-weight: normal !important;
   }
+
+  @media screen and (max-width: $layout-breakpoint){
+    h2 {
+      font-size: 32px !important;
+    }
+  }
+
+  @media screen and (max-width: 500px){
+    h2 {
+      font-size: 24px !important;
+    }
+  }
+
 }

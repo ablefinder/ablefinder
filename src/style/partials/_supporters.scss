@@ -68,15 +68,16 @@
     margin-bottom: 20px;
   }
   img {
-    margin: 50px 50px;
+    width: 200px;
+    height: auto;
+    margin: 20px 0px;
   }
 
   .row {
     max-width: 1000px;
   }
 
-  .img-no-margin {
-    margin: 0px;
+  .img-margin {
     margin-left: 50px;
   }
 
@@ -94,9 +95,17 @@
       margin-bottom: 0px;
     }
     img {
-      margin: 0px;
-      margin-top: 20px;
+      width: 100%;
+      height: auto;
     }
+
+    .col-12 {
+      img {
+        width: 46%;
+        height: auto;
+      }
+    }
+
     a {
       margin-top: 40px;
       width: 100%;
