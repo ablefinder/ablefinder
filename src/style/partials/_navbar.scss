@@ -25,4 +25,14 @@
       width: auto;
     }
   }
+
+  @media screen and (max-width: $layout-breakpoint) {
+    .btns {
+      display: none !important;
+    }
+  }
+
+  @media screen and (max-width: $mobile-breakpoint) {
+    padding: 20px;
+  }
 }
