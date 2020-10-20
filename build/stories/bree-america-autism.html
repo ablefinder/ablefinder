@@ -127,7 +127,7 @@
       src="https://www.googletagmanager.com/ns.html?id=GTM-56GJXJ4"
       height="0"
       width="0"
-      style="display: none; visibility: hidden;"
+      style="display: none; visibility: hidden"
     ></iframe
   ></noscript>
   <!-- End Google Tag Manager (noscript) -->
@@ -164,15 +164,28 @@
       bottom: 0;
       width: 100px;
       height: 100px;
-      background-image: url('../images/ks_logo.png');
+      background-image: url("../images/ks_logo.png");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
       animation: blinker 3s linear infinite;
     }
+  
+    #page-preloader-text {
+      display: block;
+      position: absolute;
+      margin: auto;
+      top: 220px;
+      left: 20px;
+      right: 0;
+      bottom: 0;
+      width: 280px;
+      height: 100px;
+    }
   </style>
   <div id="page-preloader">
     <div id="page-preloader-spinner"></div>
+    <h3 id="page-preloader-text">Loading. Please wait a few seconds.</h3>
   </div>
   <!-- <section class="header"> -->
     <!-- //= template/header.html -->
