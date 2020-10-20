@@ -1,14 +1,5 @@
 {
   "projects": {
-    "default": "ablefinder-dev"
-  },
-  "targets": {
-    "ablefinder-dev": {
-      "hosting": {
-        "website": [
-          "ablefinder1"
-        ]
-      }
-    }
+    "default": "kindshipwebsite"
   }
 }
