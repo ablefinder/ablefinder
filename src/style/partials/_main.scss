@@ -1004,6 +1004,17 @@ h3 {
 
 .privacy-page {
   overflow: hidden;
+  position: relative;
+  
+  .navbar {
+    top: -20px;
+    position: absolute;
+
+    @media screen and (max-width: $mobile-breakpoint){
+      top: 0px;
+    }
+  }
+
   p {
     margin-bottom: 10px !important;
     text-align: justify !important;
