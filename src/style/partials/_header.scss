@@ -1,16 +1,21 @@
 .header {
-  height: 50px;
+  height: 85px;
   position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
   transition: transform 0.3s;
+
   @include clearfix();
   &.fixed {
-    transform: translateY(-50px);
+    transform: translateY(-80px);
+
+    // a {
+    //   color: #19a1ac !important;
+    // }
     @media screen and (max-width: $layout-breakpoint) {
-      transform: translateY(-40px);
+      transform: translateY(-80px);
     }
   }
   @media screen and (max-width: $layout-breakpoint) {
@@ -228,6 +233,6 @@
   left: 2px;
 }
 
-.app_link_wrap{
+.app_link_wrap {
   margin: 0px !important;
 }

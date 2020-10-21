@@ -722,12 +722,11 @@
 
 #eventLandingSection {
   height: 600px;
-  background-image: linear-gradient(#147ffac2, #147ffac2),
-    url("../../images/updated_images/landing_img.svg");
+  background-image: url("../../images/updated_images/landing_img.svg");
   background-size: cover;
   background-repeat: no-repeat;
   .landingContent {
-    padding-top: 2%;
+    padding-top: 5%;
     height: 100%;
     h1 {
       font-weight: bold;
@@ -755,6 +754,11 @@
       width: 100% !important;
       height: 200px;
     }
+
+    .landingContent {
+      padding-top: 50px;
+    }
+
     height: 800px;
   }
 
@@ -767,6 +771,10 @@
     background-position: 0% 10%;
   }
 
+  @media screen and (min-width: 1500px) {
+    height: 650px;
+  }
+
   @media screen and (min-width: 1600px) {
     height: 700px;
   }
@@ -776,12 +784,23 @@
   }
 
   @media screen and (min-width: 2000px) {
+    height: 840px;
+  }
+
+  @media screen and (min-width: 2100px) {
+    height: 900px;
+  }
+
+  @media screen and (min-width: 2200px) {
+    height: 920px;
+  }
+
+  @media screen and (min-width: 2400px) {
     height: 1000px;
   }
 
   @media screen and (max-width: 425px) {
-    background-image: linear-gradient(#147ffac2, #147ffac2),
-    url("../../images/updated_images/landing_img@320.jpg");;
+    background-image: url("../../images/updated_images/landing_img@320.jpg");
     height: 520px;
   }
 
