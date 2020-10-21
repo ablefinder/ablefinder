@@ -529,14 +529,22 @@ h3 {
   padding: 40px 0px;
   background-color: #f4f4f4;
 
+  .mContainer {
+    margin: 0px 170px;
+  }
+
   img {
-    width: 200px;
+    width: 160px;
     height: auto;
   }
 
   @media screen and (max-width: $layout-breakpoint) {
     img {
       width: 100px;
+    }
+
+    .mContainer {
+      margin: 0px 50px;
     }
   }
 
