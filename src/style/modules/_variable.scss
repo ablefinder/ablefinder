@@ -11,9 +11,37 @@
   src: url('../fonts/calibriItalic.ttf');
 }
 
-$font-family-sans-serif    : calibri, sans-serif;
-$font-family-italic        : calibri-italic;
-$font-family-bold          : calibri-bold;
+// Khula
+@font-face {
+  font-family: 'khula';
+  src: url('../fonts/Khula-Regular.ttf');
+}
+@font-face {
+  font-family: 'khula-bold';
+  src: url('../fonts/Khula-Bold.ttf');
+}
+@font-face {
+  font-family: 'khula-light';
+  src: url('../fonts/Khula-Light.ttf');
+}
+
+// Open Sans
+@font-face {
+  font-family: 'open-sans';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'open-sans-bold';
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+@font-face {
+  font-family: 'open-sans-italic';
+  src: url('../fonts/OpenSans-Italic.ttf');
+}
+
+$font-family-sans-serif    : open-sans, sans-serif;
+$font-family-italic        : open-sans-italic;
+$font-family-bold          : khula-bold;
 $font-family-base          : $font-family-sans-serif;
 $font-size-base            : 18px;
 $line-height-base          : 1.56;
