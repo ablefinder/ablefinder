@@ -749,6 +749,27 @@
     }
   }
 
+  @media screen and (max-width: 1600px) {
+    .vidContainer {
+      width: 680px !important;
+      height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 1500px) {
+    .vidContainer {
+      width: 650px !important;
+      height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 1360px) {
+    .vidContainer {
+      width: 580px !important;
+      height: 200px;
+    }
+  }
+
   @media (max-width: $layout-breakpoint) {
     .vidContainer {
       width: 100% !important;
@@ -766,8 +787,16 @@
     height: 600px;
   }
 
+  @media screen and (min-width: 1200px) {
+    height: 530px;
+  }
+
+  @media screen and (min-width: 1300px) {
+    height: 560px;
+  }
+
   @media screen and (min-width: 1360px) {
-    height: 600px;
+    height: 590px;
     background-position: 0% 10%;
   }
 
