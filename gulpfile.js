@@ -173,7 +173,7 @@ gulp.task('default', ['build', 'webserver', 'watch']);
 gulp.src([
   './src/sitemap.xml',
   './src/CNAME',
-  './src/Robots.txt'
+  './src/robots.txt'
 ],{
   'base' : './src'
 })
