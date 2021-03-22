@@ -11,7 +11,7 @@
 .leadership-holder{
   max-width: 945px;
   margin: 0 auto;
-  h2{
+  h1, h2{
     margin-left: 195px;
     @media screen and (max-width: $layout-breakpoint) {
       margin: 0;

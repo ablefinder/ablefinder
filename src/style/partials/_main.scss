@@ -22,7 +22,7 @@
   h3 {
     text-align: center;
   }
-  h2 {
+  h1, h2 {
     margin-bottom: 30px;
     text-align: left;
   }
@@ -94,6 +94,7 @@ body {
     padding: 30px 0 40px;
   }
 }
+h1,
 h2,
 .h1_title {
   font-family: $font-family-bold;
@@ -109,7 +110,7 @@ h2,
     letter-spacing: 0.2px;
   }
 }
-.h2 {
+.h1, .h2 {
   font-family: $font-family-bold;
   font-size: 22px;
   font-weight: 300 !important;
@@ -870,6 +871,7 @@ h3 {
           max-width: 100%;
           flex-basis: 100%;
         }
+        h1,
         h2 {
           font-size: 24px;
           margin-bottom: 11px;
@@ -909,6 +911,7 @@ h3 {
 }
 
 #learn {
+  h1,
   h2 {
     position: relative;
     span {
@@ -1014,7 +1017,7 @@ h3 {
 .privacy-page {
   overflow: hidden;
   position: relative;
-  
+
   .navbar {
     top: -20px;
     position: absolute;
