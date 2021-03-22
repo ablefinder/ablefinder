@@ -169,3 +169,12 @@ gulp.task('watch', function () {
 });
 
 gulp.task('default', ['build', 'webserver', 'watch']);
+
+gulp.src([
+  './src/sitemap.xml',
+  './src/CNAME',
+  './src/Robots.txt'
+],{
+  'base' : './src'
+})
+  .pipe(gulp.dest('build'));
