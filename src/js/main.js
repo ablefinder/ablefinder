@@ -364,6 +364,9 @@ $(document).ready(function () {
   })(jQuery);
 });
 
+// make copyright date dynamic
+$('.copyright').html('&copy;' + new Date().getFullYear() + ' Kindship');
+
 // // get website visitor's location
 // $.getJSON('https://ipapi.co/json/', function (data) {
 //   console.log(data);
